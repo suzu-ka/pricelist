@@ -1,0 +1,130 @@
+.new{
+    padding: 0px 40px 40px 40px;
+}
+
+h3{
+    font-family: HGSGothicG;
+    font-size: 30px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new_items{
+    padding: 80px;
+    height: 500px;
+    background-color: #EFEFEF;
+
+    font-family: HGSGothicM;
+    font-size: 25px;
+    color: #2C2C2C;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.new_name{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.new_name input[type="text"]{
+    width: 400px;
+    height: 25px;
+
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: black;
+}
+
+.new_about{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+    padding: 5px;
+
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: black;
+}
+
+.new_price{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.new_price input[type="text"]{
+    width: 150px;
+    height: 25px;
+
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: black;
+}
+
+.new_image{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+#image_file{
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: #2C2C2C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image_file:hover{
+    color: #7A99CF;
+}
+#image_file input{
+    display: none;
+}
+
+.new_category{
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.new_category select{
+    padding: 5px 10px 5px 10px;
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: #2C2C2C;
+    cursor: pointer;
+}
+.new_category select:hover{
+    color: #7A99CF;
+}
+
+.new_action{
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+#new_button{
+    padding: 5px 15px 5px 15px;
+    background-color: white;
+
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+
+    font-family: HGSGothicG;
+    font-size: 25px;
+    color: #2C2C2C;
+}

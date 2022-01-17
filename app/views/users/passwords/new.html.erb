@@ -1,0 +1,16 @@
+<h3>パスワードを忘れた場合</h3>
+
+<div class="password_forget">
+ <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="password_forget_email">
+    <%= f.label :"メールアドレス:" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="password_email_actions">
+    <%= f.submit "送信する" %>
+  </div>
+ <% end %>
+</div>

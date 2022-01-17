@@ -1,0 +1,92 @@
+<link rel="stylesheet" type="text/css" href="stylesheets/show.scss">
+
+<div class="show_link">
+  <% if user_signed_in? %>
+   <%= link_to "マイページに戻る", user_path(current_user.id) %>
+  <% end %>
+  <%= link_to "投稿一覧に戻る", items_path %>
+  <%= link_to 'Food一覧に戻る', {:controller => "items", :action => "food"}, method: :post %>
+  <%= link_to 'Life一覧に戻る', {:controller => "items", :action => "life"}, method: :post %>
+  <%= link_to 'Fashion一覧に戻る', {:controller => "items", :action => "fashion"}, method: :post %>
+  <%= link_to 'Toy一覧に戻る', {:controller => "items", :action => "toy"}, method: :post %>
+  <%= link_to 'Character一覧に戻る', {:controller => "items", :action => "character"}, method: :post %>
+  <%= link_to 'Others一覧に戻る', {:controller => "items", :action => "others"}, method: :post %>
+</div>
+
+<div class="show">
+  <h3>投稿詳細</h3>
+  <div class="show_items">
+    <div class="show_info">
+      <div id="basic_info">
+       <p><%= @item.name %></p>&ensp;
+       <%= @item.price %>円<br>
+      </div>
+      <div id="show_about">
+        <%= simple_format(@item.about) %>
+      </div><br>
+
+      <div id="other_info">
+        <!-- いいね -->
+        <div class="like">
+          <% if user_signed_in? %>      
+            <% if current_user.already_liked?(@item) %>
+              <%= link_to item_like_path(@item), method: :delete do %>
+               <i class="fas fa-heart color"></i>&thinsp;<%= @item.likes.count %>
+              <% end %>
+            <% else %>
+              <%= link_to item_likes_path(@item), method: :post do %>
+               <i class="far fa-heart color"></i>&thinsp;<%= @item.likes.count %>
+              <% end %>
+            <% end %>
+          <% else %>
+           <i class="far fa-heart color"></i>&thinsp;<%= @item.likes.count %>
+          <% end %>&ensp;
+        </div>
+  
+        <div id="date_info">
+          <%= @item.created_at %>
+        </div>
+      </div>
+    </div>
+
+    <div class="show_image">
+      <%= image_tag @item.image_url, size: "250x300" if @item.image? %>
+    </div>
+
+    <div class="show_like">
+      <h4>いいねしたユーザー</h4>
+      <div class="show_like_user">
+        <% @item.liked_users.each do |user| %>
+          <li><a href="/users/<%= user.id %>"><%= user.user_name %></a></li>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- コメント -->
+    <div class="comment">
+      <div class="show_comment_all">
+        <h4>コメント一覧</h4>
+        <div class="show_comments">
+          <% @comments.each do |c| %>
+            <li><a href="/users/<%= c.user.id %>"><%= c.user.user_name %></a>&ensp;
+            <% if user_signed_in? && current_user.id == c.user_id %>
+              <%= link_to item_comment_path(@item), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
+                <i class="far fa-trash-alt comment_color"></i>
+              <% end %>
+            <% end %>
+            <%= simple_format(c.content) %><br></li>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="show_comment">
+        <%= form_with(model: [@item, @comment], local: true) do |f| %>
+          <%= f.text_area :content, :size => "50×30", :id => "comment_content" %>
+          <% if user_signed_in? %>
+            <button type="button" onclick="submit();" id="comment_button">コメントする</button>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<h3>投稿を編集する</h3>
+
+<div class="link">
+  <%= link_to "投稿一覧に戻る", items_path %>&ensp;
+  <%= link_to "マイページに戻る", user_path(current_user.id) %>
+</div>
+
+<div class="edit">
+<%= form_for @item do |f| %>
+  <div class="edit_field">
+    <%= f.label :"商品名:" %>
+    <%= f.text_field :name, :size => 30 %><br>
+    <%= f.label :"内容:" %>
+    <%= f.text_area :about, :size => "50×30" %><br>
+    <%= f.label :"値段:" %>
+    <%= f.text_field :price, :size => 10 %>円
+  </div><br>
+
+  <div class="field_image">
+    <%= f.label :"画像:" %>
+    <%= f.file_field :image %>
+  </div><br>
+
+  <div class="field_category">
+    <%= f.label :"カテゴリー:" %>
+    <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
+  </div><br>
+
+  <button type="button" onclick="submit();" id="edit_button">編集する</button>
+<% end %>
+</div>

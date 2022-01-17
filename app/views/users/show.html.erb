@@ -1,0 +1,77 @@
+<link rel="stylesheet" type="text/css" href="stylesheets/mypage.scss">
+
+<div class="link">
+  <%= link_to "トップページ", :controller => "items", :action => "top" %>&ensp;
+  <%= link_to "投稿一覧", items_path %>
+</div>
+
+<div class="mypage">
+ <h3>ユーザーマイページ</h3>
+ <div class="user_mypage">
+  <div class="user_info">
+   <p>名前 : <%= @user.user_name %></p>
+   <p>メールアドレス : <%= @user.email %></p>
+
+   <% if current_user.id == @user.id %>
+    <%= link_to "アカウントの編集・削除", edit_user_registration_path %>
+   <% end %>
+  </div>
+
+  <div class="user_action">
+   <div class="user_item">
+   <h3>ユーザーの投稿一覧</h3>
+    <div id="user_item_all">
+     <% @user.items.each do |t| %>
+      <li>
+        <%= t.name %>
+        <%= t.price %>円&nbsp;
+        <%= link_to '詳細', item_path(t.id) %>&nbsp;
+
+        <% if user_signed_in? && current_user.id == t.user_id %>
+          <!-- 編集 -->
+          <%= link_to edit_item_path(t.id) do %>
+            <i class="fas fa-pen user_color"></i>
+          <% end %>&nbsp;
+
+          <!-- 削除 -->
+          <%= link_to item_path(t.id), method: :delete do %>
+            <i class="far fa-trash-alt user_color"></i>
+          <% end %>
+        <% end %>
+      </li><br>
+     <% end %>
+    </div>
+   </div>
+
+   <div class="user_like">
+    <h3>ユーザーがいいねした投稿一覧</h3>
+    <div id="user_like_all">
+     <% @user.liked_items.each do |t| %>
+      <li>
+        <%= t.name %>
+        <%= t.price %>円&nbsp;
+        <%= link_to '詳細', item_path(t.id) %>&nbsp;
+
+        <div class="like">
+         <% if user_signed_in? %>
+          <!-- いいね -->
+          <% if current_user.already_liked?(t) %>
+            <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
+              <i class="fas fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
+            <% end %>
+          <% else %>
+            <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
+              <i class="far fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
+            <% end %>
+          <% end %>
+         <% else %>
+          <i class="far fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
+         <% end %>
+        </div>
+      </li>
+     <% end %>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

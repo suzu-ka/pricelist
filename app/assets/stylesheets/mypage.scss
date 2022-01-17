@@ -1,0 +1,99 @@
+.mypage{
+    padding: 0px 40px 40px 40px;
+}
+
+.mypage h3{
+    font-family: HGSGothicG;
+    font-size: 30px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user_mypage{
+    padding: 40px;
+    height: 600px;
+    background-color: #EFEFEF;
+}
+
+.user_info{
+    font-family: HGSGothicM;
+    font-size: 20px;
+    color: #2C2C2C;
+    line-height: 40px;
+    margin-bottom: 100px;
+    padding: 20px;
+
+    border: dashed 2px #a0a0a0;
+    border-radius: 20px;
+}
+.user_info a{
+    font-size: 18px;
+    color: inherit;
+}
+.user_info a:hover{
+    color: #7A99CF;
+}
+
+.user_action{
+    display: flex;
+    justify-content: center;
+}
+.user_action h3{
+    font-family: HGSGothicG;
+    font-size: 25px;
+    color: #626063;
+}
+
+.user_item{
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: #2C2C2C;
+
+    margin-right: 40px;
+}
+#user_item_all{
+    overflow: scroll;
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+    line-height: 20px;
+}
+#user_item_all li{
+    display: flex;
+}
+#user_item_all a{
+    color: inherit;
+}
+#user_item_all a:hover{
+    color: #7A99CF;
+}
+
+.user_like{
+    font-family: HGSGothicM;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+#user_like_all{
+    overflow: scroll;
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+    line-height: 20px;
+}
+#user_like_all li{
+    display: flex;
+}
+#user_like_all a{
+    color: inherit;
+}
+#user_like_all a:hover{
+    color: #7A99CF;
+}
+
+.user_color{
+    font-size: 15px;
+    color: #7A99CF;
+}
