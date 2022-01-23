@@ -1,31 +1,47 @@
-<h3>投稿を編集する</h3>
+<link rel="stylesheet" type="text/css" href="stylesheets/edit.scss">
 
 <div class="link">
-  <%= link_to "投稿一覧に戻る", items_path %>&ensp;
-  <%= link_to "マイページに戻る", user_path(current_user.id) %>
+  <% if user_signed_in? %>
+    <%= link_to "マイページ", user_path(current_user.id) %>
+  <% end %>&ensp;
+  <%= link_to "投稿一覧", items_path %>
 </div>
 
 <div class="edit">
-<%= form_for @item do |f| %>
-  <div class="edit_field">
-    <%= f.label :"商品名:" %>
-    <%= f.text_field :name, :size => 30 %><br>
-    <%= f.label :"内容:" %>
-    <%= f.text_area :about, :size => "50×30" %><br>
-    <%= f.label :"値段:" %>
-    <%= f.text_field :price, :size => 10 %>円
-  </div><br>
+  <h3>投稿を編集する</h3>
 
-  <div class="field_image">
-    <%= f.label :"画像:" %>
-    <%= f.file_field :image %>
-  </div><br>
+  <div class="edit_items">
+    <%= form_for @item do |f| %>
+      <div class="edit_field">
+        <div class="edit_name">
+          <%= f.label :"商品名:" %>&ensp;
+          <%= f.text_field :name, :maxlength => "15", placeholder: " (15字以内)" %>
+        </div>
 
-  <div class="field_category">
-    <%= f.label :"カテゴリー:" %>
-    <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
-  </div><br>
+        <div class="edit_about">
+          <%= f.label :"内容:" %>&ensp;
+          <%= f.text_area :about %>
+        </div>
 
-  <button type="button" onclick="submit();" id="edit_button">編集する</button>
-<% end %>
+        <div class="edit_price">
+          <%= f.label :"値段:" %>&ensp;
+          <%= f.text_field :price, :size => 10 %>円
+        </div>
+      </div><br>
+
+      <div class="edit_image">
+        <%= f.label :"画像:" %>&ensp;
+        <label id="image_file">ファイルを選択する<%= f.file_field :image %></label>
+      </div><br>
+
+      <div class="edit_category">
+        <%= f.label :"カテゴリー:" %>&ensp;
+        <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
+      </div><br>
+
+      <div class="edit_action">
+        <button type="button" onclick="submit();" id="edit_button">編集する</button>
+      </div>
+    <% end %>
+  </div>
 </div>

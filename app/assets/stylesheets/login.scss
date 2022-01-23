@@ -1,0 +1,77 @@
+.login{
+    padding: 0px 40px 40px 40px;
+}
+.login h3{
+    font-family: HGSGothicG;
+    font-size: 30px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.login_info{
+    height: 550px;
+    background-color: #EFEFEF;
+    margin: 20px;
+    padding: 100px 50px 50px 50px;
+
+    font-size: 23px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 80px;
+}
+.login_info a{
+    font-size: 20px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    color: inherit;
+}
+
+.login_email{
+    display: flex;
+    align-items: center;
+}
+#email_field{
+    width: 400px;
+    height: 25px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: black;
+}
+
+.login_password{
+    display: flex;
+    align-items: center;
+}
+#password_field{
+    width: 200px;
+    height: 25px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: black;
+}
+
+.check{
+    font-size: 20px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 60px;
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#check_box{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.login_action{
+    margin: 50px 0px 30px 0px;
+}

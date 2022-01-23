@@ -2,15 +2,15 @@
 
 <div class="show_link">
   <% if user_signed_in? %>
-   <%= link_to "マイページに戻る", user_path(current_user.id) %>
+   <%= link_to "マイページ", user_path(current_user.id) %>
   <% end %>
-  <%= link_to "投稿一覧に戻る", items_path %>
-  <%= link_to 'Food一覧に戻る', {:controller => "items", :action => "food"}, method: :post %>
-  <%= link_to 'Life一覧に戻る', {:controller => "items", :action => "life"}, method: :post %>
-  <%= link_to 'Fashion一覧に戻る', {:controller => "items", :action => "fashion"}, method: :post %>
-  <%= link_to 'Toy一覧に戻る', {:controller => "items", :action => "toy"}, method: :post %>
-  <%= link_to 'Character一覧に戻る', {:controller => "items", :action => "character"}, method: :post %>
-  <%= link_to 'Others一覧に戻る', {:controller => "items", :action => "others"}, method: :post %>
+  <%= link_to "投稿一覧", items_path %>
+  <%= link_to 'Food一覧', {:controller => "items", :action => "food"}, method: :post %>
+  <%= link_to 'Life一覧', {:controller => "items", :action => "life"}, method: :post %>
+  <%= link_to 'Fashion一覧', {:controller => "items", :action => "fashion"}, method: :post %>
+  <%= link_to 'Toy一覧', {:controller => "items", :action => "toy"}, method: :post %>
+  <%= link_to 'Character一覧', {:controller => "items", :action => "character"}, method: :post %>
+  <%= link_to 'Others一覧', {:controller => "items", :action => "others"}, method: :post %>
 </div>
 
 <div class="show">

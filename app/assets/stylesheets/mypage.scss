@@ -1,4 +1,26 @@
+.mypage_link{
+    margin-right: 25px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+    z-index: 2;
+}
+.mypage_link a{
+    margin-top: 20px;
+
+    font-family: HGSGothicE;
+    font-size: 18px;
+    color: #626063;
+}
+
 .mypage{
+    position: relative;
+    top: -250px;
+    z-index: 1;
     padding: 0px 40px 40px 40px;
 }
 
@@ -15,6 +37,7 @@
 .user_mypage{
     padding: 40px;
     height: 600px;
+    width: 950px;
     background-color: #EFEFEF;
 }
 
@@ -23,23 +46,22 @@
     font-size: 20px;
     color: #2C2C2C;
     line-height: 40px;
-    margin-bottom: 100px;
+
+    margin-bottom: 50px;
     padding: 20px;
+    width: 800px;
 
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
-}
-.user_info a{
-    font-size: 18px;
-    color: inherit;
-}
-.user_info a:hover{
-    color: #7A99CF;
 }
 
 .user_action{
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+    padding: 20px;
 }
 .user_action h3{
     font-family: HGSGothicG;
@@ -52,11 +74,11 @@
     font-size: 18px;
     color: #2C2C2C;
 
-    margin-right: 40px;
+    margin-right: 20px;
 }
 #user_item_all{
     overflow: scroll;
-    width: 500px;
+    width: 450px;
     height: 200px;
     margin-top: 30px;
     line-height: 20px;
@@ -75,10 +97,12 @@
     font-family: HGSGothicM;
     font-size: 18px;
     color: #2C2C2C;
+
+    margin-left: 20px;
 }
 #user_like_all{
     overflow: scroll;
-    width: 500px;
+    width: 450px;
     height: 200px;
     margin-top: 30px;
     line-height: 20px;
@@ -93,7 +117,20 @@
     color: #7A99CF;
 }
 
+.mypage_user_edit{
+    margin: 50px 0px 0px 10px;
+    line-height: 40px;
+}
+.mypage_user_edit a{
+    font-size: 18px;
+    color: inherit;
+}
+.mypage_user_edit a:hover{
+    color: #7A99CF;
+}
+
 .user_color{
     font-size: 15px;
     color: #7A99CF;
+    cursor: pointer;
 }

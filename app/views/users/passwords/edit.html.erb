@@ -17,8 +17,8 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "パスワードを変更する" %>
+  <div class="action">
+    <button type="button" onclick="submit();" id="action_button">パスワードを変更する</button>
   </div>
 <% end %>
 

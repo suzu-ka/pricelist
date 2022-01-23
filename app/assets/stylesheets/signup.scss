@@ -1,0 +1,47 @@
+.signup{
+    padding: 0px 40px 40px 40px;
+}
+.signup h3{
+    font-family: HGSGothicG;
+    font-size: 30px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.user_new{
+    height: 550px;
+    background-color: #EFEFEF;
+    margin: 20px;
+    padding: 100px 50px 50px 50px;
+
+    font-size: 23px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 80px;
+}
+
+.user_new_name{
+    display: flex;
+    align-items: center;
+}
+
+.user_new_email{
+    display: flex;
+    align-items: center;
+}
+
+.user_new_password{
+    display: flex;
+    align-items: center;
+}
+
+.user_new_conpass{
+    display: flex;
+    align-items: center;
+}
+
+.user_new_action{
+    margin-top: 50px;
+}

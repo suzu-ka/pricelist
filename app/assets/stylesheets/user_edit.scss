@@ -1,0 +1,50 @@
+.user_edit{
+    padding: 0px 40px 40px 40px;
+}
+.user_edit h3{
+    font-family: HGSGothicG;
+    font-size: 30px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.user_edit_info{
+    height: 550px;
+    background-color: #EFEFEF;
+    margin: 20px;
+    padding: 50px;
+
+    font-size: 23px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 60px;
+}
+
+.user_edit_name{
+    display: flex;
+    align-items: center;
+}
+
+.user_edit_email{
+    display: flex;
+    align-items: center;
+}
+
+.user_edit_newpass a{
+    font-size: 18px;
+}
+
+.user_edit_conpass{
+    display: flex;
+    align-items: center;
+}
+
+.user_edit_password a{
+    font-size: 18px;
+}
+
+.user_edit_action{
+    margin-top: 50px;
+}
