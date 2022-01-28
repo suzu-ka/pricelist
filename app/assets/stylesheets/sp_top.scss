@@ -1,0 +1,93 @@
+.sp_link{}
+
+.sp_explain p{
+    font-family: HGSGothicM;
+    font-size: 10px;
+    color: #626063;
+
+    margin: 40px 0px 0px 30px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.sp_top{
+    background-color: #EFEFEF;
+
+    margin: 20px;
+    padding: 40px;
+}
+h3{
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.sp_top_search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sp_top_search h3{
+    margin: 0px 15px 0px 0px;
+}
+input[type="text"]{
+    width: 200px;
+    height: 15px;
+    margin-right: 5px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 10px;
+    color: black;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.sp_size{
+    font-size: 10px;
+    color: #626063;
+}
+
+.sp_size:hover{
+    color: #7A99CF;
+}
+
+.top_category h3{
+    margin-bottom: 15px;
+}
+.sp_category_name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 5px 10px 15px;
+    height: 30px;
+
+    font-size: 10px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+}
+
+#sp_category_button{
+    font-size: 10px;
+    color: #2C2C2C;
+    font-family: HGSGothicG;
+    
+    width: 80px;
+    height: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+}
