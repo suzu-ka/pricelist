@@ -3,7 +3,7 @@
     padding: 0;
  }
  
- .header{
+ .sp_header{
     height: 85px;
  
     display: flex;
@@ -13,7 +13,7 @@
     border-bottom: 5px solid #EAEAEA;
  }
  
- .header_title{
+ .sp_header_title{
     height: 60px;
     margin: 20px 0px 5px 30px;
  
@@ -21,7 +21,7 @@
     justify-content: flex-start;
     text-align: center;
  }
- h1{
+ .sp_header_title h1{
     font-family: Century Gothic;
     font-size: 20px;
     color: #626063;
@@ -29,33 +29,33 @@
     -webkit-text-stroke-width: thin;
  }
  
- .header_link{
+ .sp_header_link{
     height: 60px;
     margin: 20px 30px 5px 0px;
  
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
  }
- .header_link a{
+ .sp_header_link a{
     font-family: HGSGothicM;
     font-size: 13px;
     color: #626063;
  }
  
- .body{
+ .sp_body{
     width: 100%;
     height: 850px;
     background-color: rgba(178, 203, 228, 0.6);
  }
  
- .footer{
+ .sp_footer{
     width: 100%;
     height: 30px;
     background-color: #606060;  
  }
- 
- .footer_text{
+ .sp_footer_text{
     font-family: Roboto;
     font-size: 10px;
     color: #EAEAEA;
