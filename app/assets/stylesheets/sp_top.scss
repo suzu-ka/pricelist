@@ -82,7 +82,9 @@
 .sp_size{
     font-size: 18px;
     color: #626063;
-    margin-top: 7px;
+
+    display: flex;
+    align-items: flex-end;
 }
 
 .sp_top_category h3{
