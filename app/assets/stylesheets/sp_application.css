@@ -23,7 +23,7 @@
  }
  .sp_header_title h1{
     font-family: Century Gothic;
-    font-size: 20px;
+    font-size: 30px;
     color: #626063;
     -webkit-text-stroke-color: #EAEAEA;
     -webkit-text-stroke-width: thin;
@@ -32,6 +32,7 @@
  .sp_header_link{
     height: 60px;
     margin: 20px 30px 5px 0px;
+    line-height: 10px;
  
     display: flex;
     flex-flow: column;
@@ -40,7 +41,7 @@
  }
  .sp_header_link a{
     font-family: HGSGothicM;
-    font-size: 13px;
+    font-size: 15px;
     color: #626063;
  }
  
