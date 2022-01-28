@@ -15,7 +15,7 @@
  
  .sp_header_title{
     height: 60px;
-    margin: 20px 0px 5px 30px;
+    margin: 10px 0px 10px 20px;
  
     display: flex;
     justify-content: flex-start;
@@ -32,7 +32,7 @@
  .sp_header_link{
     height: 60px;
     margin: 20px 30px 5px 0px;
-    line-height: 10px;
+    line-height: 15px;
  
     display: flex;
     flex-flow: column;
