@@ -15,7 +15,7 @@
 }
 
 .sp_explain{
-    margin: 30px 0px 30px 30px;
+    margin: 30px 0px 40px 30px;
     height: 40px;
     width: 300px;
 
@@ -45,7 +45,7 @@
     margin-bottom: 60px;
 }
 .sp_top_search h3{
-    margin: 20px 0px 20px 0px;
+    margin: 15px 0px 20px 0px;
 
     font-family: HGSGothicG;
     font-size: 20px;
@@ -76,7 +76,9 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
 
-    padding-top: 3px;
+    padding-top: 5px;
+    height: 20px;
+    width: 20px;
 }
 .sp_size{
     font-size: 18px;
