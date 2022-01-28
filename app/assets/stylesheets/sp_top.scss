@@ -1,6 +1,14 @@
+.header_title{
+    height: 40px;
+    margin: 15px 0px 5px 15px;
+ 
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+ }
 h1{
     font-family: Century Gothic;
-    font-size: 10px;
+    font-size: 3px;
     color: #626063;
     -webkit-text-stroke-color: #EAEAEA;
     -webkit-text-stroke-width: thin;
@@ -18,13 +26,13 @@ h1{
  
  .header_link a{
     font-family: HGSGothicM;
-    font-size: 13px;
+    font-size: 5px;
     color: #626063;
  }
 
 .sp_link{
     margin-right: 25px;
-    line-height: 30px;
+    line-height: 10px;
 
     display: flex;
     flex-flow: column;
@@ -46,7 +54,7 @@ h1{
 
     margin: 40px 0px 0px 30px;
     height: 40px;
-    width: 250px;
+    width: 300px;
 
     display: flex;
     text-align: center;
@@ -59,14 +67,6 @@ h1{
     margin: 20px;
     padding: 40px;
 }
-h3{
-    font-family: HGSGothicG;
-    font-size: 5px;
-    color: #626063;
-
-    display: flex;
-    align-items: center;
-}
 
 .sp_top_search{
     display: flex;
@@ -76,6 +76,13 @@ h3{
 }
 .sp_top_search h3{
     margin: 0px 15px 0px 0px;
+
+    font-family: HGSGothicG;
+    font-size: 10px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
 }
 input[type="text"]{
     width: 50px;
@@ -90,14 +97,22 @@ input[type="text"]{
 button{
     border: none;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
 }
 .sp_size{
-    font-size: 15px;
+    font-size: 18px;
     color: #626063;
 }
 
 .top_category h3{
     margin-bottom: 15px;
+
+    font-family: HGSGothicG;
+    font-size: 10px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
 }
 .sp_category_name{
     display: flex;
@@ -106,9 +121,9 @@ button{
 
     margin: 10px 5px 10px 15px;
     height: 30px;
-    width: 250px;
+    width: 350px;
 
-    font-size: 13px;
+    font-size: 10px;
     color: #2C2C2C;
     font-family: HGSGothicM;
 }
