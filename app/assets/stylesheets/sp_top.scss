@@ -1,14 +1,54 @@
-.sp_link{}
+h1{
+    font-family: Century Gothic;
+    font-size: 30px;
+    color: #626063;
+    -webkit-text-stroke-color: #EAEAEA;
+    -webkit-text-stroke-width: thin;
+ }
+
+ .header_link{
+    height: 40px;
+    margin: 20px 30px 5px 0px;
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+ 
+ .header_link a{
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #626063;
+ }
+
+.sp_link{
+    margin-right: 25px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.link a{
+    margin-top: 15px;
+
+    font-family: HGSGothicE;
+    font-size: 13px;
+    color: #626063;
+}
 
 .sp_explain p{
     font-family: HGSGothicM;
-    font-size: 10px;
+    font-size: 13px;
     color: #626063;
 
     margin: 40px 0px 0px 30px;
     height: 40px;
+    width: 150px;
+
     display: flex;
     text-align: center;
+    justify-content: flex-start;
 }
 
 .sp_top{
@@ -19,7 +59,7 @@
 }
 h3{
     font-family: HGSGothicG;
-    font-size: 13px;
+    font-size: 8px;
     color: #626063;
 
     display: flex;
@@ -36,7 +76,7 @@ h3{
     margin: 0px 15px 0px 0px;
 }
 input[type="text"]{
-    width: 200px;
+    width: 100px;
     height: 15px;
     margin-right: 5px;
     padding: 1px 3px 1px 3px;
@@ -50,12 +90,8 @@ button{
     cursor: pointer;
 }
 .sp_size{
-    font-size: 10px;
+    font-size: 15px;
     color: #626063;
-}
-
-.sp_size:hover{
-    color: #7A99CF;
 }
 
 .top_category h3{
@@ -65,16 +101,18 @@ button{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     margin: 10px 5px 10px 15px;
     height: 30px;
+    width: 150px;
 
-    font-size: 10px;
+    font-size: 13px;
     color: #2C2C2C;
     font-family: HGSGothicM;
 }
 
 #sp_category_button{
-    font-size: 10px;
+    font-size: 13px;
     color: #2C2C2C;
     font-family: HGSGothicG;
     
