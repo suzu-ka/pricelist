@@ -63,13 +63,13 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    height: 200px;
+    height: 150px;
 }
 
 .sp_index_item{
     height: 50px;
     width: 100px;
-    margin: 10px 0px 0px 20px;
+    margin: 10px 0px 10px 20px;
 
     display: flex;
     flex-flow: column;
@@ -96,8 +96,8 @@
 .sp_index_user{
     height: 50px;
     width: 100px;
-    margin: 0px 0px 20px 20px;
-    padding-left: 10px;
+    margin: 10px 0px 0px 20px;
+    padding: 0px 0px 20px 10px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -126,7 +126,7 @@
     width: 110px;
     height: 200px;
 
-    margin: 20px 10px 20px 10px;
+    margin: 20px 0px 20px 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
