@@ -55,6 +55,7 @@
 
 .sp_index_info{
     display: flex;
+    justify-content: space-between;
 }
 
 #sp_index_text{
@@ -63,7 +64,7 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    height: 150px;
+    height: 200px;
 }
 
 .sp_index_item{
@@ -126,7 +127,7 @@
     width: 110px;
     height: 200px;
 
-    margin: 20px 0px 20px 10px;
+    margin: 20px 10px 20px 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
