@@ -13,9 +13,9 @@
  <div class="sp_items">
   <% @items.each do |t| %>
    <div class="sp_items-container">
+    <p><%= t.name %></p>
     <div class="sp_index_text">
      <div class="sp_index_item">
-      <p><%= t.name %></p><br>
       <%= t.price %>円<br>
       <%= link_to '詳細', item_path(t.id) %>
 
