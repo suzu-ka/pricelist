@@ -45,7 +45,7 @@
 .sp_items-container p{
     display: flex;
     justify-content: flex-start;
-    text-align: start;
+    text-align: flex-start;
     margin: 20px 0px 0px 20px;
 
     font-family: HGSGothicG;
@@ -61,7 +61,7 @@
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: space-between;
 
     height: 100px;
 }
@@ -70,12 +70,11 @@
     height: 50px;
     width: 100px;
     margin: 10px 0px 0px 20px;
-    padding-left: 20px;
 
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
     line-height: 30px;
 
     font-family: HGSGothicM;
@@ -102,7 +101,7 @@
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    justify-content: end;
+    justify-content: flex-end;
     line-height: 20px;
 
     font-family: HGSGothicM;
