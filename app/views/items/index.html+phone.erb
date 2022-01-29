@@ -37,33 +37,33 @@
         <% end %>
        </div>
       </div>
-     </div>
 
-     <div class="sp_index_user">
-      <div id="sp_index_icon">
-       <!-- 編集 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to edit_item_path(t.id) do %>
+      <div class="sp_index_user">
+       <div id="sp_index_icon">
+        <!-- 編集 -->
+        <% if user_signed_in? && current_user.id == t.user_id %>
+         <%= link_to edit_item_path(t.id) do %>
           <i class="fas fa-pen sp_color"></i>
-        <% end %>
-       <% end %>&ensp;
+         <% end %>
+        <% end %>&ensp;
 
-       <!-- 削除 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
+        <!-- 削除 -->
+        <% if user_signed_in? && current_user.id == t.user_id %>
+         <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
           <i class="far fa-trash-alt sp_color"></i>
+         <% end %>
         <% end %>
-       <% end %>
-      </div><br>
+       </div><br>
 
        <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a><br>
        <%= t.user.email %><br>
        <%= t.created_at %>
+      </div>
      </div>
-    </div>
 
-    <div class="sp_index_image">
+     <div class="sp_index_image">
       <%= image_tag t.image_url if t.image? %>
+     </div>
     </div>
    </div>
   <% end %>
