@@ -37,6 +37,7 @@
 .sp_items-container{
     margin: 10px 0px 20px 0px;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 
@@ -53,7 +54,11 @@
     color: #2C2C2C;
 }
 
-.sp_index_text{
+.sp_index_info{
+    display: flex;
+}
+
+#sp_index_text{
     display: flex;
     flex-flow: column;
     align-items: flex-start;

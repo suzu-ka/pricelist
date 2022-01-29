@@ -12,28 +12,30 @@
  <h3>投稿一覧</h3>
  <div class="sp_items">
   <% @items.each do |t| %>
-   <div class="sp_items-container">
+    <div class="sp_items-container">
     <p><%= t.name %></p>
-    <div class="sp_index_text">
-     <div class="sp_index_item">
-      <%= t.price %>円<br>
-      <%= link_to '詳細', item_path(t.id) %>
+    <div class="sp_index_info">
+     <div id="sp_index_text">
+      <div class="sp_index_item">
+       <%= t.price %>円<br>
+       <%= link_to '詳細', item_path(t.id) %>
 
-      <!-- いいね -->
-      <div class="sp_like">
-       <% if user_signed_in? %>
-       <% if current_user.already_liked?(t) %>
+       <!-- いいね -->
+       <div class="sp_like">
+        <% if user_signed_in? %>
+         <% if current_user.already_liked?(t) %>
           <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
             <i class="fas fa-heart sp_color"></i>&thinsp;<%= t.likes.count %>
           <% end %>
-       <% else %>
+         <% else %>
           <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
             <i class="far fa-heart sp_color"></i>&thinsp;<%= t.likes.count %>
           <% end %>
-       <% end %>
-       <% else %>
-        <i class="far fa-heart sp_color"></i>&thinsp;<%= t.likes.count %>
-      <% end %>
+         <% end %>
+        <% else %>
+         <i class="far fa-heart sp_color"></i>&thinsp;<%= t.likes.count %>
+        <% end %>
+       </div>
       </div>
      </div>
 
