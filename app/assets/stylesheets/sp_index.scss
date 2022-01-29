@@ -46,7 +46,7 @@
     display: flex;
     justify-content: flex-start;
     text-align: start;
-    margin: 10px;
+    margin: 20px;
 
     font-family: HGSGothicG;
     font-size: 15px;
@@ -65,9 +65,11 @@
 }
 
 .sp_index_item{
-    height: 100px;
+    height: 50px;
     width: 150px;
-    margin:10px 20px 0px 0px;
+    margin:10px 0px 10px 20px;
+    padding-left: 30px;
+
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -93,8 +95,7 @@
 .sp_index_user{
     height: 100px;
     width: 150px;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    margin:10px 0px 20px 20px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -126,7 +127,7 @@
     margin: 10px 0px 10px 0px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
 }
 .sp_index_image img{
     width: 100px;
