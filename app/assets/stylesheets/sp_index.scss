@@ -65,12 +65,13 @@
     justify-content: space-between;
 
     height: 200px;
+    margin: 10px 0px 20px 20px;
 }
 
 .sp_index_item{
     height: 50px;
     width: 100px;
-    margin: 10px 0px 10px 20px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-flow: column;
@@ -97,8 +98,8 @@
 .sp_index_user{
     height: 50px;
     width: 100px;
-    margin: 10px 0px 20px 20px;
-    padding-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
