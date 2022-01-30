@@ -32,14 +32,14 @@
 
     padding: 20px;
     height: 650px;
-    width: 950px;
+    width: 300px;
     background-color: #EFEFEF;
 }
 
 .sp_show_info{
     padding: 20px;
 
-    width: 500px;
+    width: 150px;
     height: 250px;
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
@@ -57,8 +57,8 @@
 
 #sp_basic_info{
     line-height: 30px;
-    height: 130px;
-    width: 500px;
+    height: 80px;
+    width: 130px;
     overflow: scroll;
 
     display: flex;
@@ -96,7 +96,7 @@
 
 #sp_date_info{
     font-family: HGSGothicM;
-    font-size: 13px;
+    font-size: 10px;
     color: #2C2C2C;
 }
 
@@ -122,13 +122,12 @@
 .sp_show_like{
     position: relative;
     bottom: 280px;
-    left: 650px;
     z-index: 2;
-    width: 300px;
+    width: 250px;
 }
 .sp_show_like h4{
     font-family: HGSGothicM;
-    font-size: 13px;
+    font-size: 15px;
     color: #626063;
     margin-bottom: 10px;
 }
@@ -144,13 +143,13 @@
     color: inherit;
 
     font-family: HGSGothicM;
-    font-size: 10px;
+    font-size: 13px;
     color: #2C2C2C;
 }
 
 .sp_comment{
     position: relative;
-    bottom: 630px;
+    bottom: 300px;
     margin: 10px 0px 5px 20px;
 
     display: flex;
@@ -197,7 +196,7 @@
 
     display: flex;
     align-items: flex-end;
-    width: 1000px;
+    width: 300px;
 }
 .sp_show_comment textarea{
     padding: 5px;
