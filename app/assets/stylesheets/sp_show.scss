@@ -1,5 +1,6 @@
 .sp_show_link{
-    margin: 20px 20px 0px 0px;
+    margin-right: 20px;
+    padding-top: 20px;
     line-height: 30px;
 
     display: flex;
@@ -18,7 +19,7 @@
 
 .sp_show{
     position: relative;
-    top: -200px;
+    top: -180px;
     z-index: 1;
     padding: 0px 20px 20px 20px;
 }
@@ -33,7 +34,7 @@
     z-index: 1;
 
     width: 180px;
-    height: 200px;
+    height: auto;
     padding:20px;
     background-color: #EFEFEF;
 }
@@ -207,11 +208,9 @@
     color: black;
 }
 #sp_comment_button{
+    margin-top: 5px;
     padding: 1px 3px 1px 3px;
     background-color: white;
-
-    display: flex;
-    justify-content: center;
 
     border: solid 2px #7A99CF;
     border-radius: 10px;
