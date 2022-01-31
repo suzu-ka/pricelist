@@ -38,7 +38,6 @@
     margin-top: 20px;
     padding:20px;
     background-color: #EFEFEF;
-    overflow: scroll;
 
     display: flex;
     justify-content: center;
@@ -47,6 +46,7 @@
 .sp_show_image img{
     width: 150px;
     height: auto;
+    overflow: scroll;
 }
 
 .sp_show_items{
