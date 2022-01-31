@@ -1,5 +1,6 @@
 .sp_show_link{
-    margin-right: 25px;
+    margin-right: 20px;
+    line-height: 20px;
 
     display: flex;
     flex-flow: column;
@@ -10,8 +11,6 @@
     z-index: 2;
 }
 .sp_show_link a{
-    margin-top: 20px;
-
     font-family: HGSGothicE;
     font-size: 15px;
     color: #626063;
@@ -19,9 +18,8 @@
 
 .sp_show{
     position: relative;
-    top: -250px;
     z-index: 1;
-    padding: 0px 40px 40px 40px;
+    padding: 0px 20px 20px 20px;
 }
 .sp_show h3{
     font-family: HGSGothicG;
@@ -43,8 +41,7 @@
 
 .sp_show_image{
     position: relative;
-    top: -100px;
-    left: 50px;
+    left: 40px;
     z-index: 1;
 
     width: 110px;
@@ -63,7 +60,7 @@
 .sp_show_info{
     padding: 20px;
 
-    width: 250px;
+    width: 180px;
     height: 200px;
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
@@ -114,7 +111,7 @@
 }
 
 .sp_color{
-    font-size: 18px;
+    font-size: 13px;
     color: #7A99CF;
 }
 
@@ -125,7 +122,9 @@
 }
 
 .sp_show_like{
-    width: 250px;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
 }
 .sp_show_like h4{
     font-family: HGSGothicM;
@@ -135,8 +134,8 @@
 }
 .sp_show_like_user{
     margin-top: 20px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 80px;
     overflow: scroll;
     line-height: 20px;
 }
@@ -192,16 +191,16 @@
 }
 
 .sp_show_comment{
-    z-index: 1;
-
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+
     width: 300px;
+    margin:20px;
 }
 .sp_show_comment textarea{
     padding: 5px;
     width: 250px;
-    height: 150px;
+    height: 80px;
 
     font-family: HGSGothicM;
     font-size: 13px;
@@ -213,9 +212,6 @@
 
     border: solid 2px #7A99CF;
     border-radius: 10px;
-
-    display: flex;
-    justify-content: center;
 
     font-family: HGSGothicG;
     font-size: 15px;
