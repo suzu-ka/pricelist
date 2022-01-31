@@ -43,7 +43,7 @@
 
 .sp_show_image{
     position: relative;
-    top: -600px;
+    top: -100px;
     left: 50px;
     z-index: 1;
 
@@ -125,9 +125,6 @@
 }
 
 .sp_show_like{
-    position: relative;
-    bottom: 150px;
-    z-index: 2;
     width: 250px;
 }
 .sp_show_like h4{
@@ -153,8 +150,6 @@
 }
 
 .sp_comment{
-    position: relative;
-    bottom: 300px;
     margin: 10px 0px 5px 20px;
 
     display: flex;
@@ -205,17 +200,22 @@
 }
 .sp_show_comment textarea{
     padding: 5px;
+    width: 250px;
+    height: 150px;
+
     font-family: HGSGothicM;
     font-size: 13px;
     color: black;
 }
 #sp_comment_button{
-    margin-left: 10px;
     padding: 1px 3px 1px 3px;
     background-color: white;
 
     border: solid 2px #7A99CF;
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
 
     font-family: HGSGothicG;
     font-size: 15px;
