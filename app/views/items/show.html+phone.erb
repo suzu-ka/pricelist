@@ -15,12 +15,12 @@
 
 <div class="sp_show">
   <h3>投稿詳細</h3>
-  <div class="sp_show_items">
 
-    <div class="sp_show_image">
+  <div class="sp_show_image">
       <%= image_tag @item.image_url, size: "250x300" if @item.image? %>
-    </div>
-    
+  </div>
+
+  <div class="sp_show_items">    
     <div class="sp_show_info">
       <div id="sp_show_name">
         <p><%= @item.name %></p>
