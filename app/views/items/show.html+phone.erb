@@ -82,7 +82,7 @@
 
       <div class="sp_show_comment">
         <%= form_with(model: [@item, @comment], local: true) do |f| %>
-          <%= f.text_area :content, :size => "50×30", :id => "comment_content" %>
+          <%= f.text_area :content, :size => "30×30", :id => "comment_content" %>
           <% if user_signed_in? %>
             <button type="button" onclick="submit();" id="sp_comment_button">コメントする</button>
           <% end %>
