@@ -1,5 +1,5 @@
 .sp_show_link{
-    margin-right: 20px;
+    margin: 20px 20px 0px 0px;
     line-height: 30px;
 
     display: flex;
@@ -18,7 +18,7 @@
 
 .sp_show{
     position: relative;
-    top: -250px;
+    top: -200px;
     z-index: 1;
     padding: 0px 20px 20px 20px;
 }
@@ -59,6 +59,7 @@
 }
 
 .sp_show_info{
+    margin: 20px;
     padding: 20px;
 
     width: 180px;
@@ -79,10 +80,9 @@
 
 #sp_basic_info{
     line-height: 30px;
-    height: auto;
-    width: 130px;
+    width: 150px;
     overflow: scroll;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     display: flex;
     flex-flow: column;
@@ -132,11 +132,12 @@
     margin-bottom: 10px;
 }
 .sp_show_like_user{
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
     width: 180px;
-    height: 80px;
+    height: 100px;
     overflow: scroll;
-    line-height: 20px;
+    line-height: 30px;
 }
 .sp_show_like a{
     text-decoration: none;
@@ -163,6 +164,7 @@
 }
 .sp_show_comments{
     margin-bottom: 10px;
+    padding-left: 10px;
     width: 280px;
     height: 100px;
     overflow: scroll;
@@ -207,6 +209,9 @@
 #sp_comment_button{
     padding: 1px 3px 1px 3px;
     background-color: white;
+
+    display: flex;
+    justify-content: center;
 
     border: solid 2px #7A99CF;
     border-radius: 10px;
