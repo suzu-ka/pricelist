@@ -32,7 +32,7 @@
 
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
 
     font-size: 15px;
@@ -47,7 +47,7 @@
 }
 
 .sp_login_email{
-    line-height: 10px;
+    line-height: 20px;
 }
 #sp_email_field{
     width: 200px;
@@ -60,7 +60,7 @@
 }
 
 .sp_login_password{
-    line-height: 10px;
+    line-height: 20px;
 }
 #sp_password_field{
     width: 150px;
