@@ -1,11 +1,10 @@
 .sp_link{
     margin-right: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
 .sp_link a{
     font-family: HGSGothicE;
@@ -28,13 +27,13 @@
 .sp_login_info{
     height: 600px;
     background-color: #EFEFEF;
-    margin: 20px 10px 10px 10px;
-    padding: 20px;
+    margin: 30px 10px 10px 10px;
+    padding: 40px;
 
     font-size: 15px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    line-height: 40px;
+    line-height: 20px;
 }
 .sp_login_info a{
     font-size: 13px;
@@ -47,6 +46,8 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+
+    margin-bottom: 10px;
 }
 #sp_email_field{
     width: 200px;
@@ -62,6 +63,8 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+
+    margin-top: 10px;
 }
 #sp_password_field{
     width: 150px;
@@ -79,7 +82,7 @@
     font-family: HGSGothicM;
     line-height: 50px;
 
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
 }
@@ -90,9 +93,9 @@
 }
 
 .sp_login_action{
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 30px 0px;
 }
-#action_button{
+#sp_action_button{
     padding: 5px 15px 5px 15px;
     background-color: white;
     
