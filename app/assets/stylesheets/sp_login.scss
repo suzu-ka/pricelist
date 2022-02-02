@@ -28,11 +28,11 @@
     height: 400px;
     background-color: #EFEFEF;
     margin: 30px 10px 10px 10px;
-    padding: 40px;
+    padding: 20px;
 
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
 
     font-size: 15px;
@@ -47,7 +47,9 @@
 }
 
 .sp_login_email{
-    line-height: 20px;
+    height: 50px;
+    margin: 40px 0px 15px 0px;
+    line-height: 30px;
 }
 #sp_email_field{
     width: 200px;
@@ -60,7 +62,9 @@
 }
 
 .sp_login_password{
-    line-height: 20px;
+    height: 50px;
+    margin-top: 15px;
+    line-height: 30px;
 }
 #sp_password_field{
     width: 150px;
