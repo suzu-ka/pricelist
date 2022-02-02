@@ -1,7 +1,6 @@
 .sp_link{
     margin-right: 20px;
-    padding-top: 10px;
-    line-height: 15px;
+    padding-top: 20px;
 
     display: flex;
     flex-flow: column;
@@ -15,7 +14,7 @@
 }
 
 .sp_login{
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
 }
 .sp_login h3{
     font-family: HGSGothicG;
@@ -27,15 +26,15 @@
 }
 
 .sp_login_info{
-    height: 500px;
+    height: 600px;
     background-color: #EFEFEF;
-    margin: 20px;
-    padding: 50px 30px 30px 30px;
+    margin: 20px 10px 10px 10px;
+    padding: 20px;
 
     font-size: 15px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    line-height: 80px;
+    line-height: 40px;
 }
 .sp_login_info a{
     font-size: 13px;
@@ -65,7 +64,7 @@
     justify-content: center;
 }
 #sp_password_field{
-    width: 100px;
+    width: 150px;
     height: 20px;
     padding: 1px 3px 1px 3px;
 
@@ -75,7 +74,7 @@
 }
 
 .sp_check{
-    font-size: 15px;
+    font-size: 13px;
     color: #2C2C2C;
     font-family: HGSGothicM;
     line-height: 50px;
@@ -91,5 +90,16 @@
 }
 
 .sp_login_action{
-    margin: 30px 0px 15px 0px;
+    margin: 20px 0px 20px 0px;
+}
+#action_button{
+    padding: 5px 15px 5px 15px;
+    background-color: white;
+    
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+    
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: #2C2C2C;
 }
