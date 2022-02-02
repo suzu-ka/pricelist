@@ -1,0 +1,95 @@
+.sp_link{
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 15px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sp_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_login{
+    padding: 0px 20px 20px 20px;
+}
+.sp_login h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.sp_login_info{
+    height: 500px;
+    background-color: #EFEFEF;
+    margin: 20px;
+    padding: 50px 30px 30px 30px;
+
+    font-size: 15px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 80px;
+}
+.sp_login_info a{
+    font-size: 13px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    color: inherit;
+}
+
+.sp_login_email{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#sp_email_field{
+    width: 200px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_login_password{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#sp_password_field{
+    width: 100px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_check{
+    font-size: 15px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 50px;
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#sp_check_box{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.sp_login_action{
+    margin: 30px 0px 15px 0px;
+}
