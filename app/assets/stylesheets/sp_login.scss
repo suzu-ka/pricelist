@@ -29,11 +29,11 @@
     background-color: #EFEFEF;
     margin: 30px 10px 10px 10px;
     padding: 20px;
-    line-height: 50px;
 
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    justify-content: flex-start;
 
     font-size: 15px;
     color: #2C2C2C;
@@ -86,11 +86,11 @@
 
     margin-top: 30px;
     display: flex;
+    align-items: center;
 }
 #sp_check_box{
     width: 13px;
     height: 13px;
-    cursor: pointer;
 }
 
 .sp_login_action{
