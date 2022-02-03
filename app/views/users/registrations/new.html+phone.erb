@@ -14,12 +14,12 @@
     <div class="sp_user_new_name">
       <%= f.label :"名前:" %>&ensp;
       <%= f.text_field :user_name, autofocus: true, :id => "sp_name_field" %>
-    </div>
+    </div><br>
 
     <div class="sp_user_new_email">
       <%= f.label :"メールアドレス:" %>&ensp;
       <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "sp_email_field" %>
-    </div>
+    </div><br>
 
     <div class="sp_user_new_password">
       <%= f.label :"パスワード" %>&ensp;
@@ -27,7 +27,7 @@
         (<%= @minimum_password_length %> 文字以上):&ensp;
       <% end %>
       <%= f.password_field :password, autocomplete: "new-password", :id => "sp_password_field" %>
-    </div>
+    </div><br>
 
     <div class="sp_user_new_conpass">
       <%= f.label :"パスワード_(確認):" %>&ensp;

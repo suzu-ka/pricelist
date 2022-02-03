@@ -39,8 +39,15 @@
     font-family: HGSGothicM;
 }
 
+.sp_user_new_name{
+    margin-top: 30px;
+    line-height: 20px;
+
+    display: flex;
+    flex-flow: column;
+}
 #sp_name_field{
-    width: 100px;
+    width: 150px;
     height: 20px;
     padding: 1px 3px 1px 3px;
 
@@ -49,6 +56,9 @@
     color: black;
 }
 
+.sp_user_new_email{
+    line-height: 20px;
+}
 #sp_email_field{
     width: 250px;
     height: 20px;
@@ -59,6 +69,9 @@
     color: black;
 }
 
+.sp_user_new_password{
+    line-height: 20px;
+}
 #sp_password_field{
     width: 150px;
     height: 20px;
@@ -67,6 +80,10 @@
     font-family: HGSGothicG;
     font-size: 13px;
     color: black;
+}
+
+.sp_user_new_conpass{
+    line-height: 20px;
 }
 
 .sp_user_new_action{
