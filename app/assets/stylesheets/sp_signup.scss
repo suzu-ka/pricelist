@@ -41,7 +41,7 @@
 
 .sp_user_new_name{
     margin-top: 30px;
-    line-height: 10px;
+    line-height: 13px;
 
     display: flex;
     flex-flow: column;
@@ -57,7 +57,7 @@
 }
 
 .sp_user_new_email{
-    line-height: 10px;
+    line-height: 13px;
 
     display: flex;
     flex-flow: column;
@@ -73,14 +73,14 @@
 }
 
 .sp_user_new_password{
-    line-height: 10px;
+    line-height: 13px;
 
     display: flex;
     flex-flow: column;
 }
 #new_password_text{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 #sp_password_field{
     width: 150px;
@@ -93,7 +93,7 @@
 }
 
 .sp_user_new_conpass{
-    line-height: 10px;
+    line-height: 13px;
 
     display: flex;
     flex-flow: column;
