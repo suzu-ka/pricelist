@@ -27,9 +27,9 @@
 
     <div class="sp_user_new_password">
      <div id="new_password_text">
-      <%= f.label :"パスワード" %>
+      <%= f.label :"パスワード" %>&ensp;
       <% if @minimum_password_length %>
-        (<%= @minimum_password_length %> 文字以上):&ensp;
+        (<%= @minimum_password_length %> 文字以上):
       <% end %>
      </div>
       <%= f.password_field :password, autocomplete: "new-password", :id => "sp_password_field" %>
