@@ -16,10 +16,14 @@
       <%= f.text_field :user_name, autofocus: true, :id => "sp_name_field" %>
     </div><br>
 
+    <br>
+
     <div class="sp_user_new_email">
       <%= f.label :"メールアドレス:" %>&ensp;
       <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "sp_email_field" %>
     </div><br>
+
+    <br>
 
     <div class="sp_user_new_password">
       <%= f.label :"パスワード" %>&ensp;
@@ -28,6 +32,8 @@
       <% end %>
       <%= f.password_field :password, autocomplete: "new-password", :id => "sp_password_field" %>
     </div><br>
+
+    <br>
 
     <div class="sp_user_new_conpass">
       <%= f.label :"パスワード_(確認):" %>&ensp;

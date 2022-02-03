@@ -58,6 +58,9 @@
 
 .sp_user_new_email{
     line-height: 20px;
+
+    display: flex;
+    flex-flow: column;
 }
 #sp_email_field{
     width: 250px;
@@ -71,6 +74,9 @@
 
 .sp_user_new_password{
     line-height: 20px;
+
+    display: flex;
+    flex-flow: column;
 }
 #sp_password_field{
     width: 150px;
@@ -84,6 +90,9 @@
 
 .sp_user_new_conpass{
     line-height: 20px;
+
+    display: flex;
+    flex-flow: column;
 }
 
 .sp_user_new_action{
