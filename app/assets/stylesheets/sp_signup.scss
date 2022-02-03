@@ -1,0 +1,85 @@
+.sp_signup_link{
+    margin-right: 20px;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sp_signup_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_signup{
+    padding: 20px;
+}
+.sp_signup h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.sp_user_new{
+    height: 500px;
+    background-color: #EFEFEF;
+    margin: 30px 10px 10px 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    font-size: 15px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+}
+
+#sp_name_field{
+    width: 100px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+#sp_email_field{
+    width: 250px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+#sp_password_field{
+    width: 150px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_user_new_action{
+    margin: 40px 0px 50px 0px;
+}
+#sp_action_button{
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+    
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: #2C2C2C;
+}
