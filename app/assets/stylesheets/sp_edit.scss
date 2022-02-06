@@ -85,12 +85,12 @@
 }
 
 .sp_edit_image{
-    margin: 30px 0px 30px 0px;
+    margin-bottom: 10px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 #sp_image_file{
-    width: 150px;
+    width: 130px;
     height: 20px;
     background-color: white;
     cursor: pointer;
@@ -108,7 +108,7 @@
 }
 
 .sp_edit_category{
-    margin: 30px 0px 30px 0px;
+    margin-bottom: 30px;
     display: flex;
     align-items: flex-start;
 }
