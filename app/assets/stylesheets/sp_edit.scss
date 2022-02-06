@@ -85,15 +85,15 @@
 }
 
 .sp_edit_image{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
-    align-items: flex-end;
+    flex-flow: column;
+    justify-content: flex-start;
 }
 #sp_image_file{
-    width: 130px;
+    width: 100px;
     height: 20px;
     background-color: white;
-    cursor: pointer;
 
     font-family: HGSGothicM;
     font-size: 13px;
@@ -103,7 +103,7 @@
     justify-content: center;
     align-items: center;
 }
-#image_file input{
+#sp_image_file input{
     display: none;
 }
 
