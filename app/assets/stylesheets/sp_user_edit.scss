@@ -1,6 +1,6 @@
-.sp_link{
+.sp_user_edit_link{
     margin-right: 20px;
-    padding-top: 10px;
+    padding-top: 30px;
     line-height: 15px;
 
     display: flex;
@@ -15,7 +15,7 @@
 }
 
 .sp_user_edit{
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
 }
 .sp_user_edit h3{
     font-family: HGSGothicG;
@@ -27,12 +27,11 @@
 }
 
 .sp_user_edit_info{
-    height: 550px;
+    height: 600px;
     background-color: #EFEFEF;
-    margin: 20px;
-    padding: 30px;
+    padding: 20px;
 
-    font-size: 18px;
+    font-size: 15px;
     color: #2C2C2C;
     font-family: HGSGothicM;
     line-height: 40px;
@@ -40,7 +39,7 @@
 
 .sp_user_edit_name{
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
 }
 #sp_name_field{
     width: 150px;
@@ -54,7 +53,8 @@
 
 .sp_user_edit_email{
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
 }
 #sp_email_field{
     width: 250px;
@@ -66,6 +66,11 @@
     color: black;
 }
 
+.sp_user_edit_newpass{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
 .sp_user_edit_newpass a{
     font-size: 13px;
 }
@@ -81,9 +86,15 @@
 
 .sp_user_edit_conpass{
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
+.sp_user_edit_password{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
 .sp_user_edit_password a{
     font-size: 13px;
 }
