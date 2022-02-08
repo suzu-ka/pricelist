@@ -1,0 +1,127 @@
+.sp_mypage_link{
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 30px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+    z-index: 2;
+}
+.sp_mypage_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_mypage{
+    position: relative;
+    top: -250px;
+    z-index: 1;
+    padding: 0px 40px 40px 40px;
+}
+
+.sp_mypage h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sp_user_mypage{
+    padding: 20px;
+    height: 600px;
+    width: 300px;
+    background-color: #EFEFEF;
+}
+
+.sp_user_info{
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 300px;
+
+    border: dashed 2px #a0a0a0;
+    border-radius: 20px;
+}
+
+.sp_user_action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    padding: 20px;
+}
+.sp_user_action h3{
+    font-family: HGSGothicG;
+    font-size: 18px;
+    color: #626063;
+}
+
+.sp_user_item{
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+
+    margin-right: 20px;
+}
+#sp_user_item_all{
+    overflow: scroll;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    line-height: 20px;
+}
+#sp_user_item_all li{
+    display: flex;
+}
+#sp_user_item_all a{
+    color: inherit;
+}
+
+.sp_user_like{
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+
+    margin-left: 20px;
+}
+#sp_user_like_all{
+    overflow: scroll;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+#sp_user_like_all li{
+    display: flex;
+}
+#sp_user_like_all a{
+    color: inherit;
+}
+
+.sp_mypage_user_edit{
+    margin: 40px 0px 0px 10px;
+    line-height: 30px;
+}
+.sp_mypage_user_edit a{
+    font-size: 15px;
+    color: inherit;
+}
+
+.sp_user_color{
+    font-size: 13px;
+    color: #7A99CF;
+    cursor: pointer;
+}
