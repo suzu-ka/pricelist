@@ -41,6 +41,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    margin: 30px 0px 10px 0px;
 }
 #sp_name_field{
     width: 150px;
@@ -57,6 +59,8 @@
     flex-flow: column;
     align-items: flex-start;
     line-height: 30px;
+
+    margin: 10px 0px 10px 0px;
 }
 #sp_email_field{
     width: 250px;
@@ -72,6 +76,9 @@
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    line-height: 30px;
+
+    margin: 10px 0px 10px 0px;
 }
 .sp_user_edit_newpass a{
     font-size: 13px;
@@ -90,12 +97,18 @@
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    line-height: 30px;
+
+    margin: 10px 0px 10px 0px;
 }
 
 .sp_user_edit_password{
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    line-height: 30px;
+
+    margin-top: 10px;
 }
 .sp_user_edit_password a{
     font-size: 13px;
