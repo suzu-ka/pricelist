@@ -77,13 +77,13 @@
      </div>
     </div>
    </div>
-  </div>
 
-  <div class="sp_mypage_user_edit">
+   <div class="sp_mypage_user_edit">
     <% if user_signed_in? && current_user.id == @user.id %>
       <%= link_to "アカウントの編集", edit_user_registration_path(@user.id) %><br>
       <%= link_to "アカウントの削除", user_path(@user.id), data: { confirm: "本当によろしいですか？" }, method: :delete %>
     <% end %>
+   </div>
   </div>
  </div>
 </div>
