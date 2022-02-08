@@ -1,0 +1,122 @@
+.sp_link{
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 15px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sp_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_category{
+    padding: 0px 20px 20px 20px;
+}
+.sp_category h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sp_category_items{
+    padding: 20px;
+    height: 650px;
+    background-color: #EFEFEF;
+    overflow: scroll;
+}
+
+.sp_items-container{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    flex-flow: column;
+
+    border: dashed 2px #a0a0a0;
+    border-radius: 20px;
+}
+
+.sp_category_item{
+    height: 300px;
+    width: 280px;
+    margin:10px 20px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    line-height: 30px;
+
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+}
+.sp_category_item p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+
+    font-family: HGSGothicG;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+.sp_category_item a{
+    color: inherit;
+}
+
+.sp_like{
+    color: #7A99CF;
+}
+.sp_like a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sp_color{
+    font-size: 15px;
+    color: #7A99CF;
+    margin-right: 5px;
+}
+
+.sp_category_image{
+    width: 250px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sp_category_image img{
+    width: 250px;
+    height: auto;
+}
+
+.sp_category_user{
+    height: 280px;
+    width: 280px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    line-height: 30px;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: #2C2C2C;
+}
+.sp_category_user a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#sp_category_icon{
+    display: flex;
+}
