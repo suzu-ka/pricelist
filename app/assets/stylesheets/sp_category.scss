@@ -1,14 +1,13 @@
-.sp_link{
+.sp_category_link{
     margin-right: 20px;
-    padding-top: 10px;
-    line-height: 15px;
+    padding-top: 20px;
 
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-end;
 }
-.sp_link a{
+.sp_category_link a{
     font-family: HGSGothicE;
     font-size: 15px;
     color: #626063;
@@ -79,8 +78,8 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    height: 250px;
-    margin: 10px 0px 10px 20px;
+    height: 220px;
+    margin: 10px 0px 20px 20px;
 }
 
 .sp_category_item{
