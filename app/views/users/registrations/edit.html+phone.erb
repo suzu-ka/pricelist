@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="stylesheets/sp_user_edit.scss">
+
+<div class="sp_link">
+  <%= link_to "マイページに戻る", :back %>
+</div>
+
+<div class="sp_user_edit">
+  <h3>アカウントの編集</h3>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+   <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="sp_user_edit_info">
+   <div class="sp_user_edit_name">
+    <%= f.label :"名前:" %>&ensp;
+    <%= f.text_field :user_name, autofocus: true, autocomplete: "name", :id => "sp_name_field" %>
+   </div>
+
+   <div class="sp_user_edit_email">
+    <%= f.label :"メールアドレス:" %>&ensp;
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "sp_email_field" %>
+   </div>
+
+   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+   <% end %>
+
+   <div class="sp_user_edit_newpass">
+    <%= f.label :新しいパスワード %>
+    <% if @minimum_password_length %>
+    (<%= @minimum_password_length %> 文字以上):&nbsp;
+    <%= f.password_field :password, autocomplete: "new-password", :id => "sp_password_field" %><br>
+    <a>&emsp;(変更しない場合は、入力しないでください)</a><br>
+    <% end %>
+   </div>
+
+   <div class="sp_user_edit_conpass">
+    <%= f.label :"新しいパスワード(確認):" %>&ensp;
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", :id => "sp_password_field" %>
+   </div>
+
+   <div class="sp_user_edit_password">
+    <%= f.label :"現在のパスワード:" %>&nbsp;
+    <%= f.password_field :current_password, autocomplete: "current-password", :id => "sp_password_field" %><br>
+    <a>&emsp;(変更内容を保存するためには、パスワードの入力が必要です)</a>
+   </div>
+
+   <div class="sp_user_edit_action">
+    <button type="button" onclick="submit();" id="sp_action_button">保存する</button>
+   </div>
+  </div>
+ <% end %>
+</div>

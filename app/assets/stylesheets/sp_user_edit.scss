@@ -1,0 +1,104 @@
+.sp_link{
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 15px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sp_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_user_edit{
+    padding: 0px 20px 20px 20px;
+}
+.sp_user_edit h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+}
+
+.sp_user_edit_info{
+    height: 550px;
+    background-color: #EFEFEF;
+    margin: 20px;
+    padding: 30px;
+
+    font-size: 18px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+    line-height: 40px;
+}
+
+.sp_user_edit_name{
+    display: flex;
+    align-items: center;
+}
+#sp_name_field{
+    width: 150px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_user_edit_email{
+    display: flex;
+    align-items: center;
+}
+#sp_email_field{
+    width: 250px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_user_edit_newpass a{
+    font-size: 13px;
+}
+#sp_password_field{
+    width: 150px;
+    height: 20px;
+    padding: 1px 3px 1px 3px;
+
+    font-family: HGSGothicG;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_user_edit_conpass{
+    display: flex;
+    align-items: center;
+}
+
+.sp_user_edit_password a{
+    font-size: 13px;
+}
+
+.sp_user_edit_action{
+    margin-top: 30px;
+}
+#sp_action_button{
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+    
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: #2C2C2C;
+}
