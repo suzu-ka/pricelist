@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/sp_new.scss">
 
 <div class="sp_link">
-  <%= link_to "トップページ", :controller => "items", :action => "top" %>&ensp;
+  <%= link_to "トップページ", :controller => "items", :action => "top" %>
   <%= link_to "投稿一覧", items_path %>
 </div>
 
@@ -13,15 +13,15 @@
   <div class="sp_new_name">
     <%= f.label :"商品名:" %>&ensp;
     <%= f.text_field :name, :maxlength => "15", placeholder: " (15字以内)" %>
-  </div><br>
+  </div>
   <div class="sp_new_about">
     <%= f.label :"内容:" %>&ensp;
     <%= f.text_area :about %>
-  </div><br>
+  </div>
   <div class="sp_new_price">
     <%= f.label :"値段:" %>&ensp;
     <%= f.text_field :price %>円
-  </div><br>
+  </div>
 
   <div class="sp_new_image">
     <%= f.label :"画像:" %>&ensp;
