@@ -47,7 +47,7 @@
 .category_item p{
     display: flex;
     justify-content: flex-start;
-    text-align: start;
+    text-align: flex-start;
 
     font-family: HGSGothicG;
     font-size: 23px;
@@ -57,7 +57,6 @@
 .category_item a{
     color: inherit;
 }
-
 .category_item a:hover{
     color: #7A99CF;
 }
@@ -65,7 +64,6 @@
 .like{
     color: #7A99CF;
 }
-
 .like a{
     text-decoration: none;
     color: inherit;
@@ -84,7 +82,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .category_image img{
     width: 250px;
     height: auto;
@@ -105,16 +102,14 @@
     font-size: 18px;
     color: #2C2C2C;
 }
-
-#category_icon{
-    display: flex;
-}
-
 .category_user a{
     text-decoration: none;
     color: inherit;
 }
-
 .category_user a:hover{
     color: #7A99CF;
+}
+
+#category_icon{
+    display: flex;
 }

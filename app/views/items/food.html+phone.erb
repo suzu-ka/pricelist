@@ -14,7 +14,7 @@
       <div class="sp_category_info">
        <div id="sp_category_text">
         <div class="sp_category_item">
-         <%= t.price %>円<br>
+         <%= t.price %>円
          <%= link_to '詳細', item_path(t.id) %>
 
          <!-- いいね -->
@@ -52,7 +52,7 @@
             <% end %>
           </div>
 
-          <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a><br>
+          <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a>
           <%= t.user.email %><br>
           <%= t.created_at %>
         </div>

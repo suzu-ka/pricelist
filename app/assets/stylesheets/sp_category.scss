@@ -35,7 +35,7 @@
 }
 
 .sp_items-container{
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     display: flex;
     flex-flow: column;
 
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: flex-start;
     text-align: flex-start;
-    margin: 20px 0px 0px 20px;
+    margin: 10px 0px 0px 20px;
 
     font-family: HGSGothicG;
     font-size: 15px;
@@ -56,7 +56,7 @@
 .sp_category_item{
     height: 300px;
     width: 280px;
-    margin:10px 20px 0px 0px;
+    margin-right: 20px;
     display: flex;
     flex-flow: column;
     align-items: flex-end;
@@ -65,15 +65,6 @@
 
     font-family: HGSGothicM;
     font-size: 15px;
-    color: #2C2C2C;
-}
-.sp_category_item p{
-    display: flex;
-    justify-content: flex-start;
-    text-align: start;
-
-    font-family: HGSGothicG;
-    font-size: 18px;
     color: #2C2C2C;
 }
 
@@ -88,8 +79,8 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    height: 200px;
-    margin: 10px 0px 20px 20px;
+    height: 250px;
+    margin: 10px 0px 10px 20px;
 }
 
 .sp_category_item{
