@@ -15,11 +15,11 @@
 }
 
 .sp_category{
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
 }
 .sp_category h3{
     font-family: HGSGothicG;
-    font-size: 20px;
+    font-size: 25px;
     color: #626063;
 
     display: flex;
@@ -41,6 +41,16 @@
 
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
+}
+.sp_items-container p{
+    display: flex;
+    justify-content: flex-start;
+    text-align: flex-start;
+    margin: 20px 0px 0px 20px;
+
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: #2C2C2C;
 }
 
 .sp_category_item{
@@ -67,6 +77,36 @@
     color: #2C2C2C;
 }
 
+.sp_category_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sp_category_text{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 200px;
+    margin: 10px 0px 20px 20px;
+}
+
+.sp_category_item{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 30px;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: #2C2C2C;
+}
 .sp_category_item a{
     color: inherit;
 }
@@ -79,37 +119,19 @@
     color: inherit;
 }
 
-.sp_color{
-    font-size: 15px;
-    color: #7A99CF;
-    margin-right: 5px;
-}
-
-.sp_category_image{
-    width: 250px;
-    margin: 10px 0px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sp_category_image img{
-    width: 250px;
-    height: auto;
-}
-
 .sp_category_user{
-    height: 280px;
-    width: 280px;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    padding-left: 10px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: flex-end;
-    line-height: 30px;
+    line-height: 20px;
 
     font-family: HGSGothicM;
-    font-size: 13px;
+    font-size: 10px;
     color: #2C2C2C;
 }
 .sp_category_user a{
@@ -117,6 +139,29 @@
     color: inherit;
 }
 
-#sp_category_icon{
+#sp_index_icon{
     display: flex;
+}
+.sp_color{
+    font-size: 15px;
+    color: #7A99CF;
+    margin-right: 5px;
+}
+
+.sp_category_image{
+    width: 110px;
+    height: 200px;
+    margin: 20px 10px 20px 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.sp_category_image img{
+    width: 100px;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

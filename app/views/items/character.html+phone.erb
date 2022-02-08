@@ -9,11 +9,13 @@
  <div class="sp_category_items">
   <% @items.each do |t| %>
    <% if t.category == "character" %>
-    <div class="sp_items-container">
+   <div class="sp_items-container">
+   <p><%= t.name %></p>
+   <div class="sp_category_info">
+    <div id="sp_category_text">
      <div class="sp_category_item">
-      <p><%= t.name %></p><br>
       <%= t.price %>円<br>
-      <%= link_to '詳細', item_path(t.id) %><br>
+      <%= link_to '詳細', item_path(t.id) %>
 
       <!-- いいね -->
       <div class="sp_like">
@@ -33,33 +35,35 @@
       </div>
      </div>
 
-     <div class="sp_category_image">
-      <%= image_tag t.image_url if t.image? %>
-     </div>
-
      <div class="sp_category_user">
-      <div id="sp_category_icon">
-       <!-- 編集 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to edit_item_path(t.id) do %>
-          <i class="fas fa-pen sp_color"></i>
-        <% end %>
-       <% end %>&ensp;
+       <div id="sp_category_icon">
+         <!-- 編集 -->
+         <% if user_signed_in? && current_user.id == t.user_id %>
+           <%= link_to edit_item_path(t.id) do %>
+             <i class="fas fa-pen sp_color"></i>
+           <% end %>
+         <% end %>&ensp;
 
-       <!-- 削除 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
-          <i class="far fa-trash-alt sp_color"></i>
-        <% end %>
-       <% end %>
-      </div><br>
+         <!-- 削除 -->
+         <% if user_signed_in? && current_user.id == t.user_id %>
+           <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
+             <i class="far fa-trash-alt sp_color"></i>
+           <% end %>
+         <% end %>
+       </div>
 
-      <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a><br>
-      <%= t.user.email %><br>
-      <%= t.created_at %>
+       <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a><br>
+       <%= t.user.email %><br>
+       <%= t.created_at %>
      </div>
     </div>
-   <% end %>
-  <% end %>
+
+    <div class="sp_category_image">
+      <%= image_tag t.image_url if t.image? %>
+    </div>
+  </div>
  </div>
+<% end %>
+<% end %>
+</div>
 </div>
