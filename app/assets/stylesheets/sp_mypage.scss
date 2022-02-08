@@ -34,35 +34,32 @@
     margin-bottom: 20px;
 }
 
-.sp_user_mypage{
-    padding: 20px;
-    height: 650px;
-    width: 300px;
-    background-color: #EFEFEF;
-}
-
 .sp_user_info{
     font-family: HGSGothicM;
     font-size: 15px;
     color: #2C2C2C;
     line-height: 30px;
 
-    margin-bottom: 30px;
-    padding: 20px;
-    width: 250px;
+    padding: 40px 20px 20px 20px;
+    width: 180px;
+    background-color: #EFEFEF;
 
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
+}
+
+.sp_user_mypage{
+    padding: 20px;
+    height: 550px;
+    width: 300px;
+    background-color: #EFEFEF;
 }
 
 .sp_user_action{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
-
-    margin-top: 40px;
-    padding: 20px;
+    align-items: flex-start;
 }
 .sp_user_action h3{
     font-family: HGSGothicG;
@@ -75,10 +72,11 @@
     font-size: 15px;
     color: #2C2C2C;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #sp_user_item_all{
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
     width: 250px;
     height: 150px;
     margin-top: 15px;
@@ -99,7 +97,8 @@
     margin-bottom: 20px;
 }
 #sp_user_like_all{
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
     width: 250px;
     height: 150px;
     margin-top: 15px;

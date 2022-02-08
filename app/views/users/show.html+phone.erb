@@ -12,19 +12,19 @@
 </div>
 
 <div class="sp_mypage">
- <h3>ユーザーマイページ</h3>
- <div class="sp_user_mypage">
+  <h3>ユーザーマイページ</h3>
   <div class="sp_user_info">
-   <p>名前 : <%= @user.user_name %></p>
-   <p>メールアドレス : <%= @user.email %></p>
+    <p>名前 : <%= @user.user_name %></p>
+    <p>メールアドレス : <%= @user.email %></p>
   </div>
-
-  <div class="sp_user_action">
-   <div class="sp_user_item">
-   <h3>ユーザーの投稿一覧</h3>
-    <div id="sp_user_item_all">
-     <% @user.items.each do |t| %>
-      <li>
+  
+  <div class="sp_user_mypage">
+   <div class="sp_user_action">
+    <div class="sp_user_item">
+     <h3>ユーザーの投稿一覧</h3>
+     <div id="sp_user_item_all">
+      <% @user.items.each do |t| %>
+       <li>
         <%= t.name %>
         <%= t.price %>円&nbsp;
         <%= link_to '詳細', item_path(t.id) %>&nbsp;
@@ -40,16 +40,16 @@
             <i class="far fa-trash-alt sp_user_color"></i>
           <% end %>
         <% end %>
-      </li><br>
-     <% end %>
+       </li><br>
+      <% end %>
+     </div>
     </div>
-   </div>
 
-   <div class="sp_user_like">
-    <h3>ユーザーがいいねした投稿一覧</h3>
-    <div id="sp_user_like_all">
-     <% @user.liked_items.each do |t| %>
-      <li>
+    <div class="sp_user_like">
+     <h3>ユーザーがいいねした投稿一覧</h3>
+     <div id="sp_user_like_all">
+      <% @user.liked_items.each do |t| %>
+       <li>
         <%= t.name %>
         <%= t.price %>円&nbsp;
         <%= link_to '詳細', item_path(t.id) %>&nbsp;
@@ -70,8 +70,9 @@
           <i class="far fa-heart sp_user_color"></i>&thinsp;<%= t.likes.count %>
          <% end %>
         </div>
-      </li>
-     <% end %>
+       </li>
+      <% end %>
+     </div>
     </div>
    </div>
   </div>
