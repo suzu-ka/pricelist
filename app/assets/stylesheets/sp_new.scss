@@ -1,0 +1,134 @@
+.sp_link{
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 15px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sp_link a{
+    font-family: HGSGothicE;
+    font-size: 15px;
+    color: #626063;
+}
+
+.sp_new{
+    padding: 0px 20px 20px 20px;
+}
+.sp_new h3{
+    font-family: HGSGothicG;
+    font-size: 20px;
+    color: #626063;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sp_new_items{
+    padding: 20px;
+    height: 550px;
+    background-color: #EFEFEF;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+}
+
+.sp_new_name{
+    margin: 40px 0px 30px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.sp_new_name input[type="text"]{
+    width: 200px;
+    height: 20px;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_new_about{
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.sp_new_about textarea{
+    width: 200px;
+    height: 50px;
+    padding: 3px;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_new_price{
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.sp_new_price input[type="text"]{
+    width: 100px;
+    height: 20px;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: black;
+}
+
+.sp_new_image{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+#sp_image_file{
+    width: 150px;
+    height: 20px;
+    background-color: white;
+
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: #2C2C2C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sp_image_file input{
+    display: none;
+}
+
+.sp_new_category{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+.sp_new_category select{
+    padding: 5px 10px 5px 10px;
+    font-family: HGSGothicM;
+    font-size: 13px;
+    color: #2C2C2C;
+}
+
+.sp_new_action{
+    margin-top: 40px;
+}
+#sp_new_button{
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    
+    border: solid 2px #7A99CF;
+    border-radius: 10px;
+    
+    font-family: HGSGothicG;
+    font-size: 15px;
+    color: #2C2C2C;
+}
