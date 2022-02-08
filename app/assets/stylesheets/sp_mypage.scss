@@ -19,7 +19,7 @@
 
 .sp_mypage{
     position: relative;
-    top: -220px;
+    top: -200px;
     z-index: 1;
     padding: 0px 20px 20px 20px;
 }
@@ -30,7 +30,7 @@
     color: #626063;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -40,10 +40,11 @@
     color: #2C2C2C;
     line-height: 30px;
 
-    padding: 40px 20px 20px 20px;
+    padding: 20px;
     width: 180px;
-    background-color: #EFEFEF;
-
+    background-color: #EFEFEF;    
+}
+#sp_user_info_flame{
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
 }
@@ -77,12 +78,13 @@
 #sp_user_item_all{
     overflow-x: scroll;
     overflow-y: scroll;
-    width: 250px;
+    width: 280px;
     height: 150px;
     margin-top: 15px;
     line-height: 20px;
 }
 #sp_user_item_all li{
+    width: 150%;
     display: flex;
 }
 #sp_user_item_all a{
@@ -93,18 +95,17 @@
     font-family: HGSGothicM;
     font-size: 15px;
     color: #2C2C2C;
-
-    margin-bottom: 20px;
 }
 #sp_user_like_all{
     overflow-x: scroll;
     overflow-y: scroll;
-    width: 250px;
+    width: 280px;
     height: 150px;
     margin-top: 15px;
     line-height: 30px;
 }
 #sp_user_like_all li{
+    width: 150%;
     display: flex;
 }
 #sp_user_like_all a{
