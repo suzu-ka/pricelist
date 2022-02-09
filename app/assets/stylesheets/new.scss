@@ -117,6 +117,9 @@ textarea{
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width:768px){
+    .new_action{margin-top: 20px; }
+    }
 #new_button{
     padding: 5px 15px 5px 15px;
     background-color: white;

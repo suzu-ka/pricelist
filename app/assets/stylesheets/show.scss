@@ -23,6 +23,10 @@
     z-index: 1;
     padding: 0px 40px 40px 40px;
 }
+@media screen and (max-width:768px){
+    .show{position: relative;
+    top: -300px; }
+    }
 
 .show_items{
     line-height: 60px;
@@ -35,6 +39,9 @@
     width: 950px;
     background-color: #EFEFEF;
 }
+@media screen and (max-width:768px){
+    .show_items{width: 900px; }
+    }
 
 .show_info{
     padding: 20px;
@@ -96,6 +103,9 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:768px){
+    .show_image{width: 220px; }
+    }
 
 .show_like{
     position: relative;
