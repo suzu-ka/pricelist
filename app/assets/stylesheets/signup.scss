@@ -31,6 +31,12 @@
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:768px){
+    .user_new_email{
+        display: flex;
+    flex-flow: column;
+    justify-content: center; }
+    }
 
 .user_new_password{
     display: flex;

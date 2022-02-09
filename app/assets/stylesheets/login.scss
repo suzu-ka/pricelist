@@ -32,6 +32,12 @@
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:768px){
+    .login_email{
+        display: flex;
+    flex-flow: column;
+    justify-content: center; }
+    }
 #email_field{
     width: 400px;
     height: 25px;
