@@ -18,8 +18,6 @@ class ApplicationController < ActionController::Base
   private
     def set_request_variant
       case request.user_agent
-      when /iPad/
-        request.variant = :ipad
       when /iPhone/
         request.variant = :phone
       when /Android/
