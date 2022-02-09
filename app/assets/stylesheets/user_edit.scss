@@ -21,6 +21,10 @@
     font-family: HGSGothicM;
     line-height: 60px;
 }
+@media screen and (max-width:768px){
+    .user_edit_info{
+        padding:30px; }
+}
 
 .user_edit_name{
     display: flex;
@@ -31,6 +35,16 @@
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:768px){
+    .user_edit_email{
+        display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 20px 0px 20px 0px;
+    line-height: 20px; }
+    }
 
 .user_edit_newpass a{
     font-size: 18px;
