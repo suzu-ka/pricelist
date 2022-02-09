@@ -79,8 +79,9 @@
 }
 @media screen and (max-width:768px){
     #show_about{width: 270px;
-        height: 100px;
-        font-size: 15px; }
+        height: 120px;
+        font-size: 15px;
+        overflow: scroll; }
     }
 
 #other_info{
@@ -115,7 +116,7 @@
     height: 350px;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 170px;
+    .show_image{width: 190px;
     height: 330px;
     position: relative;
     top: -200px;
@@ -131,7 +132,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image img{width: 160px; }
+    .show_image img{width: 180px; }
     }
 
 .show_like{
@@ -238,7 +239,7 @@
     width: 1000px;
 }
 @media screen and (max-width:768px){
-    .show_comment{width: 300px; }
+    .show_comment{width: 400px; }
     }
 textarea{
     padding: 5px;
