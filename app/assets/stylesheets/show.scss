@@ -41,7 +41,9 @@
     background-color: #EFEFEF;
 }
 @media screen and (max-width:768px){
-    .show_items{width: 540px; }
+    .show_items{width: 540px;
+    line-height: 30px;
+    font-size: 18px; }
     }
 
 .show_info{
@@ -54,7 +56,8 @@
 }
 @media screen and (max-width:768px){
     .show_info{width: 270px;
-    height: 200px; }
+    height: 200px;
+    padding: 10px; }
     }
 
 #basic_info{
@@ -75,8 +78,8 @@
     overflow: scroll;
 }
 @media screen and (max-width:768px){
-    .show_about{width: 150px;
-        height: 100px;
+    .show_about{width: 100px;
+        height: 80px;
         font-size: 13px; }
     }
 
@@ -88,12 +91,19 @@
     position: relative;
     top: -50px;
 }
+@media screen and (max-width:768px){
+    #other_info{position: relative;
+    top: -80px; }
+    }
 
 #date_info{
     font-family: HGSGothicM;
     font-size: 18px;
     color: #2C2C2C;
 }
+@media screen and (max-width:768px){
+    #date_info{font-size: 13px; }
+    }
 
 .show_image{
     position: relative;
@@ -105,9 +115,10 @@
     height: 350px;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 120px;
+    .show_image{width: 100px;
     height: 300px;
     position: relative;
+    top: -250px;
     left: 350px; }
     }
 .show_image img{
@@ -120,7 +131,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 100px; }
+    .show_image{width: 70px; }
     }
 
 .show_like{
@@ -169,6 +180,10 @@
     bottom: 630px;
     margin: 10px 0px 5px 20px;
 }
+@media screen and (max-width:768px){
+    .comment{position: relative;
+    bottom: 600px; }
+    }
 
 
 .show_comment_all{
