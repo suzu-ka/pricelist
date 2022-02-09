@@ -119,16 +119,15 @@
     height: 330px;
     position: relative;
     top: -200px;
-    left: 350px; }
+    left: 370px; }
     }
 .show_image img{
     width: 250px;
     height: auto;
 
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 @media screen and (max-width:768px){
     .show_image img{width: 180px; }
