@@ -78,7 +78,7 @@
     overflow: scroll;
 }
 @media screen and (max-width:768px){
-    .show_about{width: 100px;
+    #show_about{width: 100px;
         height: 80px;
         font-size: 13px; }
     }
@@ -115,11 +115,11 @@
     height: 350px;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 100px;
+    .show_image{width: 120px;
     height: 300px;
     position: relative;
-    top: -250px;
-    left: 350px; }
+    top: -200px;
+    left: 330px; }
     }
 .show_image img{
     width: 250px;
@@ -131,7 +131,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 70px; }
+    .show_image img{width: 100px; }
     }
 
 .show_like{
@@ -182,7 +182,7 @@
 }
 @media screen and (max-width:768px){
     .comment{position: relative;
-    bottom: 600px; }
+    bottom: 500px; }
     }
 
 
