@@ -25,7 +25,8 @@
 }
 @media screen and (max-width:768px){
     .show{position: relative;
-    top: -300px; }
+    top: -360px;
+    padding: 0px 20px 20px 20px; }
     }
 
 .show_items{
@@ -40,7 +41,7 @@
     background-color: #EFEFEF;
 }
 @media screen and (max-width:768px){
-    .show_items{width: 80%; }
+    .show_items{width: 540px; }
     }
 
 .show_info{
@@ -166,6 +167,9 @@
     color: #2C2C2C;
     line-height: 20px;
 }
+@media screen and (max-width:768px){
+    .show_comments{width: 350px; }
+    }
 .show_comments a{
     color: inherit;
 
@@ -188,6 +192,9 @@
     align-items: flex-end;
     width: 1000px;
 }
+@media screen and (max-width:768px){
+    .show_comment{width: 400px; }
+    }
 textarea{
     padding: 5px;
     font-family: HGSGothicM;
