@@ -47,7 +47,7 @@
 }
 @media screen and (max-width:768px){
     .user_mypage{
-        width: 850px; }
+        width: 700px; }
     }
 
 .user_info{
@@ -65,7 +65,7 @@
 }
 @media screen and (max-width:768px){
     .user_info{
-        width: 750px; }
+        width: 650px; }
     }
 
 .user_action{
@@ -96,9 +96,17 @@
     margin-top: 30px;
     line-height: 20px;
 }
+@media screen and (max-width:768px){
+    #user_item_all{
+        width: 350px; }
+    }
 #user_item_all li{
     display: flex;
 }
+@media screen and (max-width:768px){
+    #user_item_all li{
+        width: 150%; }
+    }
 #user_item_all a{
     color: inherit;
 }
@@ -113,10 +121,6 @@
 
     margin-left: 20px;
 }
-@media screen and (max-width:768px){
-    .user_like{
-        margin-left: 0px; }
-    }
 #user_like_all{
     overflow: scroll;
     width: 450px;
@@ -124,9 +128,17 @@
     margin-top: 30px;
     line-height: 30px;
 }
+@media screen and (max-width:768px){
+    #user_like_all{
+        width: 350px; }
+    }
 #user_like_all li{
     display: flex;
 }
+@media screen and (max-width:768px){
+    #user_like_all li{
+        width: 150%; }
+    }
 #user_like_all a{
     color: inherit;
 }

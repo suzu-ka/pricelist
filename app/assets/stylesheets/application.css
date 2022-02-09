@@ -18,10 +18,6 @@
    margin: 0;
    padding: 0;
 }
-@media screen and (max-width:768px){
-   *{
-       width: 100%; }
-   }
 
 .header{
    height: 85px;
