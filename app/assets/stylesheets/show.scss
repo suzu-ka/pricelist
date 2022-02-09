@@ -79,7 +79,7 @@
 }
 @media screen and (max-width:768px){
     #show_about{width: 270px;
-        height: 80px;
+        height: 100px;
         font-size: 15px; }
     }
 
@@ -93,7 +93,7 @@
 }
 @media screen and (max-width:768px){
     #other_info{position: relative;
-    top: -30px; }
+    top: 0px; }
     }
 
 #date_info{
@@ -131,7 +131,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image img{width: 150px; }
+    .show_image img{width: 160px; }
     }
 
 .show_like{
@@ -191,7 +191,7 @@
     width: 1000px;
 }
 @media screen and (max-width:768px){
-    .show_comment_all{width: 300px; }
+    .show_comment_all{width: 480px; }
     }
 .show_comment_all h4{
     font-family: HGSGothicM;
@@ -247,7 +247,7 @@ textarea{
     color: black;
 }
 @media screen and (max-width:768px){
-    .show_comment textarea{width: 200px; }
+    .show_comment textarea{width: 300px; }
     }
 #comment_button{
     margin-left: 10px;
