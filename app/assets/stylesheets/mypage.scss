@@ -23,6 +23,11 @@
     z-index: 1;
     padding: 0px 40px 40px 40px;
 }
+@media screen and (max-width:768px){
+    .mypage{
+        position: relative;
+        top: -300px; }
+    }
 
 .mypage h3{
     font-family: HGSGothicG;
@@ -40,6 +45,10 @@
     width: 950px;
     background-color: #EFEFEF;
 }
+@media screen and (max-width:768px){
+    .user_mypage{
+        width: 850px; }
+    }
 
 .user_info{
     font-family: HGSGothicM;
@@ -54,6 +63,10 @@
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
 }
+@media screen and (max-width:768px){
+    .user_info{
+        width: 750px; }
+    }
 
 .user_action{
     display: flex;
@@ -100,6 +113,10 @@
 
     margin-left: 20px;
 }
+@media screen and (max-width:768px){
+    .user_like{
+        margin-left: 0px; }
+    }
 #user_like_all{
     overflow: scroll;
     width: 450px;

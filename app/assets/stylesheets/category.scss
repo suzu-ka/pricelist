@@ -53,6 +53,11 @@
     font-size: 23px;
     color: #2C2C2C;
 }
+@media screen and (max-width:768px){
+    .category_item p{
+        width: 200px;
+        font-size: 18px; }
+    }
 
 .category_item a{
     color: inherit;
@@ -86,6 +91,10 @@
     width: 250px;
     height: auto;
 }
+@media screen and (max-width:768px){
+    .category_image img{
+        width: 150px; }
+    }
 
 .category_user{
     height: 280px;
