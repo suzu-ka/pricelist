@@ -55,7 +55,7 @@
     border-radius: 20px;
 }
 @media screen and (max-width:768px){
-    .show_info{width: 270px;
+    .show_info{width: 300px;
     height: 200px;
     padding: 10px; }
     }
@@ -78,9 +78,9 @@
     overflow: scroll;
 }
 @media screen and (max-width:768px){
-    #show_about{width: 100px;
+    #show_about{width: 270px;
         height: 80px;
-        font-size: 13px; }
+        font-size: 15px; }
     }
 
 #other_info{
@@ -93,7 +93,7 @@
 }
 @media screen and (max-width:768px){
     #other_info{position: relative;
-    top: -80px; }
+    top: -30px; }
     }
 
 #date_info{
@@ -102,7 +102,7 @@
     color: #2C2C2C;
 }
 @media screen and (max-width:768px){
-    #date_info{font-size: 13px; }
+    #date_info{font-size: 15px; }
     }
 
 .show_image{
@@ -115,11 +115,11 @@
     height: 350px;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 120px;
-    height: 300px;
+    .show_image{width: 170px;
+    height: 330px;
     position: relative;
     top: -200px;
-    left: 330px; }
+    left: 350px; }
     }
 .show_image img{
     width: 250px;
@@ -131,7 +131,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image img{width: 100px; }
+    .show_image img{width: 150px; }
     }
 
 .show_like{
@@ -182,7 +182,7 @@
 }
 @media screen and (max-width:768px){
     .comment{position: relative;
-    bottom: 500px; }
+    bottom: 530px; }
     }
 
 
@@ -246,6 +246,9 @@ textarea{
     font-size: 15px;
     color: black;
 }
+@media screen and (max-width:768px){
+    .show_comment textarea{width: 200px; }
+    }
 #comment_button{
     margin-left: 10px;
     padding: 1px 3px 1px 3px;
