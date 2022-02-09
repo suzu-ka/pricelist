@@ -68,6 +68,10 @@ button{
 .size:hover{
     color: #7A99CF;
 }
+@media screen and (max-width:768px){
+    .size{
+        font-size: 15px; }
+    }
 
 .top_category h3{
     margin-bottom: 30px;
