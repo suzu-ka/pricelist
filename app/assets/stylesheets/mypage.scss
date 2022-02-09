@@ -65,7 +65,7 @@
 }
 @media screen and (max-width:768px){
     .user_info{
-        width: 650px; }
+        width: 600px; }
     }
 
 .user_action{
@@ -81,6 +81,10 @@
     font-size: 25px;
     color: #626063;
 }
+@media screen and (max-width:768px){
+    .user_action h3{
+        font-size: 20px; }
+    }
 
 .user_item{
     font-family: HGSGothicM;
@@ -98,7 +102,7 @@
 }
 @media screen and (max-width:768px){
     #user_item_all{
-        width: 350px; }
+        width: 300px; }
     }
 #user_item_all li{
     display: flex;
@@ -130,7 +134,7 @@
 }
 @media screen and (max-width:768px){
     #user_like_all{
-        width: 350px; }
+        width: 300px; }
     }
 #user_like_all li{
     display: flex;
