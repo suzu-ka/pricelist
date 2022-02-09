@@ -35,7 +35,9 @@
     .user_new_email{
         display: flex;
     flex-flow: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 30px; }
     }
 
 .user_new_password{
