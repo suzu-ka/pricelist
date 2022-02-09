@@ -71,7 +71,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
 .index_image img{
     width: 250px;
     height: auto;
@@ -81,6 +80,10 @@ h3{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:768px){
+    .index_image img{
+        width: 150px; }
+    }
 
 .index_user{
     height: 280px;
