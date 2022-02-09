@@ -26,10 +26,9 @@
 @media screen and (max-width:768px){
     .mypage{
         position: relative;
-        top: -400px;
+        top: -380px;
         padding: 0px 20px 20px 20px; }
     }
-
 .mypage h3{
     font-family: HGSGothicG;
     font-size: 30px;
@@ -48,7 +47,8 @@
 }
 @media screen and (max-width:768px){
     .user_mypage{
-        width: 550px; }
+        width: 500px;
+        padding: 20px; }
     }
 
 .user_info{
@@ -66,7 +66,7 @@
 }
 @media screen and (max-width:768px){
     .user_info{
-        width: 450px; }
+        width: 480px; }
     }
 
 .user_action{
@@ -111,7 +111,7 @@
 }
 @media screen and (max-width:768px){
     #user_item_all{
-        width: 250px; }
+        width: 230px; }
     }
 #user_item_all li{
     display: flex;
