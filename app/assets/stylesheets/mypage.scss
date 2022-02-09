@@ -26,7 +26,8 @@
 @media screen and (max-width:768px){
     .mypage{
         position: relative;
-        top: -300px; }
+        top: -400px;
+        padding: 0px 20px 20px 20px; }
     }
 
 .mypage h3{
@@ -47,7 +48,7 @@
 }
 @media screen and (max-width:768px){
     .user_mypage{
-        width: 600px; }
+        width: 550px; }
     }
 
 .user_info{
@@ -65,7 +66,7 @@
 }
 @media screen and (max-width:768px){
     .user_info{
-        width: 500px; }
+        width: 450px; }
     }
 
 .user_action{
@@ -76,6 +77,10 @@
     margin-top: 60px;
     padding: 20px;
 }
+@media screen and (max-width:768px){
+    .user_action{
+        margin-top: 30px; }
+    }
 .user_action h3{
     font-family: HGSGothicG;
     font-size: 25px;
@@ -83,7 +88,7 @@
 }
 @media screen and (max-width:768px){
     .user_action h3{
-        font-size: 20px; }
+        font-size: 15px; }
     }
 
 .user_item{
@@ -93,6 +98,10 @@
 
     margin-right: 20px;
 }
+@media screen and (max-width:768px){
+    .user_item{
+        font-size: 13px; }
+    }
 #user_item_all{
     overflow: scroll;
     width: 450px;
@@ -125,6 +134,10 @@
 
     margin-left: 20px;
 }
+@media screen and (max-width:768px){
+    .user_like{
+        font-size: 13px; }
+    }
 #user_like_all{
     overflow: scroll;
     width: 450px;
