@@ -53,7 +53,8 @@
     border-radius: 20px;
 }
 @media screen and (max-width:768px){
-    .show_info{width: 270px; }
+    .show_info{width: 270px;
+    height: 200px; }
     }
 
 #basic_info{
@@ -74,7 +75,8 @@
     overflow: scroll;
 }
 @media screen and (max-width:768px){
-    .show_about{width: 250px; }
+    .show_about{width: 200px;
+    font-size: 15px; }
     }
 
 #other_info{
@@ -102,7 +104,9 @@
     height: 350px;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 220px; }
+    .show_image{width: 170px;
+    position: relative;
+    left: 300px; }
     }
 .show_image img{
     width: 250px;
@@ -114,7 +118,7 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .show_image{width: 200px; }
+    .show_image{width: 150px; }
     }
 
 .show_like{
@@ -125,7 +129,9 @@
     width: 300px;
 }
 @media screen and (max-width:768px){
-    .show_like{width: 200px; }
+    .show_like{width: 200px;
+    position: relative;
+    left: 350px; }
     }
 .show_like h4{
     font-family: HGSGothicM;
