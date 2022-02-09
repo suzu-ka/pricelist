@@ -17,12 +17,14 @@
 <div class="top">
  <div class="top_search">
   <h3>投稿を検索</h3>
-  <%= form_tag({controller:"items",action:"index"}, method: :get) do %>
-   <%= text_field_tag :search %>
-   <%= button_tag :type => "submit" do %>
-    <i class="fas fa-search size"></i>
+  <div id="sp_top_search_bar">
+   <%= form_tag({controller:"items",action:"index"}, method: :get) do %>
+    <%= text_field_tag :search %>
+    <%= button_tag :type => "submit" do %>
+     <i class="fas fa-search size"></i>
+    <% end %>
    <% end %>
-  <% end %>
+  </div>
  </div>
 
   <div class="top_category">
