@@ -1,20 +1,18 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/password_forget.scss">
 
-<div class="password_forget">
+<div class="password_forget_whole">
   <h3>パスワードを忘れた場合</h3>
 
-  <div class="password_forget_info">
-   <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
     <%= render "users/shared/error_messages", resource: resource %>
 
-    <div class="password_forget_email">
-      <%= f.label :"メールアドレス:" %>&ensp;
+    <span class="password_forget_email">
+      <p><%= f.label :"メールアドレス:" %></p>&emsp;
       <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "email_field" %>
-    </div>
+    </span>
 
-    <div class="password_forget_action">
+    <span class="password_forget_action">
       <button type="button" onclick="submit();" id="action_button">送信する</button>
-    </div>
-   <% end %>
-  </div>
+    </span>
+  <% end %>
 </div>

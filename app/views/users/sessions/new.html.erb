@@ -1,39 +1,43 @@
 <!-- localhost:3000/users/sign_in -->
 <link rel="stylesheet" type="text/css" href="stylesheets/login.scss">
 
-<div class="link">
-  <%= link_to "トップページに戻る", top_items_path %>
-</div>
-
-<div class="login">
+<div class="login_whole">
+<main class="login_main">
   <h3>ログイン</h3>
 
-  <div class="login_info">
-   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="login_email">
-      <%= f.label :"メールアドレス:" %>&ensp;
+  <div class="login_background">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <span class="login_email">
+      <p><%= f.label :"メールアドレス:" %></p>&emsp;
       <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "email_field" %>
-    </div>
+    </span>
 
-    <div class="login_password">
-      <%= f.label :"パスワード:" %>&ensp;
+    <span class="login_password">
+      <p><%= f.label :"パスワード:" %></p>&emsp;
       <%= f.password_field :password, autocomplete: "current-password", :id => "password_field" %>
-    </div>
+    </span>
 
-    <div class="check">
+    <span class="login_check">
       <% if devise_mapping.rememberable? %>
-        <%= f.check_box :remember_me, :id => "check_box" %>&ensp;
-        <%= f.label :次回から入力を省略する %>
+        <%= f.check_box :remember_me, :id => "check_box" %>&emsp;
+        <p><%= f.label :次回から入力を省略する %></p>
       <% end %>
-    </div>
+    </span>
 
-    <div class="login_action">
-    <button type="button" onclick="submit();" id="action_button">ログイン</button>
-    </div>
-   <% end %>
+    <span class="login_action">
+      <button type="button" onclick="submit();" id="action_button">ログイン</button>
+    </span>
+  <% end %>
 
-   <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-    <%= link_to "パスワードを忘れた場合", new_password_path(resource_name) %><br />
-   <% end %>
+  <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+    <%= link_to "パスワードを忘れた場合", new_password_path(resource_name) %>
+  <% end %>
   </div>
+</main>
+
+<nav class="login_link">
+  <ul>
+    <li><%= link_to "トップページに戻る", top_items_path %></li>
+  </ul>
+</nav>
 </div>

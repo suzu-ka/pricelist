@@ -1,47 +1,51 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/edit.scss">
 
-<div class="link">
-  <% if user_signed_in? %>
-    <%= link_to "マイページ", user_path(current_user.id) %>
-  <% end %>&ensp;
-  <%= link_to "投稿一覧", items_path %>
-</div>
-
-<div class="edit">
+<div class="edit_whole">
+<main class="edit_main">
   <h3>投稿を編集する</h3>
 
-  <div class="edit_items">
+  <div class="edit_item">
     <%= form_for @item do |f| %>
-      <div class="edit_field">
-        <div class="edit_name">
-          <%= f.label :"商品名:" %>&ensp;
+      <div class="edit_info">
+        <span class="edit_name">
+          <p><%= f.label :"商品名:" %></p>&emsp;
           <%= f.text_field :name, :maxlength => "15", placeholder: " (15字以内)" %>
-        </div>
+        </span>
 
-        <div class="edit_about">
-          <%= f.label :"内容:" %>&ensp;
+        <span class="edit_about">
+          <p><%= f.label :"内容:" %></p>&emsp;
           <%= f.text_area :about %>
-        </div>
+        </span>
 
-        <div class="edit_price">
-          <%= f.label :"値段:" %>&ensp;
+        <span class="edit_price">
+          <p><%= f.label :"値段:" %></p>&emsp;
           <%= f.text_field :price, :size => 10 %>円
-        </div>
-      </div><br>
-
-      <div class="edit_image">
-        <%= f.label :"画像:" %>&ensp;
-        <label id="image_file">ファイルを選択する<%= f.file_field :image %></label>
-      </div><br>
-
-      <div class="edit_category">
-        <%= f.label :"カテゴリー:" %>&ensp;
-        <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
-      </div><br>
-
-      <div class="edit_action">
-        <button type="button" onclick="submit();" id="edit_button">編集する</button>
+        </span>
       </div>
+
+      <span class="edit_image">
+        <p><%= f.label :"画像:" %></p>&emsp;
+        <label id="image_file">ファイルを選択する<%= f.file_field :image %></label>
+      </span>
+
+      <span class="edit_category">
+        <p><%= f.label :"カテゴリー:" %></p>&emsp;
+        <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
+      </span>
+
+      <span class="edit_action">
+        <button type="button" onclick="submit();" id="edit_button">編集する</button>
+      </span>
     <% end %>
   </div>
+</main>
+
+<nav class="edit_link">
+  <ul>
+    <% if user_signed_in? %>
+      <li><%= link_to "マイページ", user_path(current_user.id) %></li>
+    <% end %>
+    <li><%= link_to "投稿一覧", items_path %></li>
+  </ul>
+</nav>
 </div>

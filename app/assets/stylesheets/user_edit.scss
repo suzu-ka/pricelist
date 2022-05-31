@@ -1,68 +1,95 @@
-.user_edit{
-    padding: 0px 40px 40px 40px;
+.user_edit_whole{
+    padding: 40px;
+    display: flex;
 }
-.user_edit h3{
+
+.user_edit_main{
+    flex-basis: 850px;
+    margin-right: 50px;
+}
+.user_edit_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
-    display: flex;
-    align-items: center;
 }
-
-.user_edit_info{
+.user_edit_main form{
     height: 550px;
     background-color: #EFEFEF;
     margin: 20px;
-    padding: 50px;
-
-    font-size: 23px;
+    padding: 50px 60px;
+    font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    line-height: 60px;
 }
-@media screen and (max-width:768px){
-    .user_edit_info{
-        padding: 30px; }
+.user_edit_main #small{
+    font-size: 18px;
 }
 
 .user_edit_name{
     display: flex;
     align-items: center;
+    margin: 25px 0;
 }
 
 .user_edit_email{
     display: flex;
     align-items: center;
-}
-@media screen and (max-width:768px){
-    .user_edit_email{
-        display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    margin: 20px 0px 20px 0px;
-    line-height: 20px; }
-    }
-
-.user_edit_newpass a{
-    font-size: 18px;
+    margin: 25px 0;
 }
 
-.user_edit_conpass{
+.user_edit_newpass{
+    margin: 25px 0;
+}
+.user_edit_newpass #top{
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
-.user_edit_password a{
-    font-size: 18px;
+.user_edit_againpass{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.user_edit_password{
+    margin: 25px 0;
+}
+.user_edit_password #top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .user_edit_action{
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
-@media screen and (max-width:768px){
-    .user_edit_action{
-        margin-top: 30px; }
+
+.user_edit_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 70px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.user_edit_link ul{
+    align-items: flex-start;
+    list-style: none;
+    line-height: 200%;
+}
+.user_edit_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
+}
+.user_edit_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }

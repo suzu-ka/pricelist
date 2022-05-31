@@ -1,52 +1,62 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/user_edit.scss">
 
-<div class="link">
-  <%= link_to "マイページに戻る", :back %>
-</div>
-
-<div class="user_edit">
+<div class="user_edit_whole">
+<main class="user_edit_main">
   <h3>アカウントの編集</h3>
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-   <%= render "users/shared/error_messages", resource: resource %>
+    <%= render "users/shared/error_messages", resource: resource %>
 
-  <div class="user_edit_info">
-   <div class="user_edit_name">
-    <%= f.label :"名前:" %>&ensp;
-    <%= f.text_field :user_name, autofocus: true, autocomplete: "name", :id => "name_field" %>
-   </div>
+    <span class="user_edit_name">
+      <p><%= f.label :"名前:" %></p>&emsp;
+      <%= f.text_field :user_name, autofocus: true, autocomplete: "name", :id => "name_field" %>
+    </span>
 
-   <div class="user_edit_email">
-    <%= f.label :"メールアドレス:" %>&ensp;
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "email_field" %>
-   </div>
+    <span class="user_edit_email">
+      <p><%= f.label :"メールアドレス:" %></p>&emsp;
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :id => "email_field" %>
+    </span>
 
-   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-   <% end %>
-
-   <div class="user_edit_newpass">
-    <%= f.label :新しいパスワード %>
-    <% if @minimum_password_length %>
-    (<%= @minimum_password_length %> 文字以上):&nbsp;
-    <%= f.password_field :password, autocomplete: "new-password", :id => "password_field" %><br>
-    <a>&emsp;(変更しない場合は、入力しないでください)</a><br>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <span>Currently waiting confirmation for: <%= resource.unconfirmed_email %></span>
     <% end %>
-   </div>
 
-   <div class="user_edit_conpass">
-    <%= f.label :"新しいパスワード(確認):" %>&ensp;
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", :id => "password_field" %>
-   </div>
+    <span class="user_edit_newpass">
+      <span id="top">
+        <p><%= f.label :新しいパスワード %>
+        <% if @minimum_password_length %>
+          (<%= @minimum_password_length %> 文字以上):</p>&emsp;
+          <%= f.password_field :password, autocomplete: "new-password", :id => "password_field" %>
+        <% end %>
+      </span>
+      <span id="bottom">
+        <p id="small">&emsp;(変更しない場合は、入力しないでください)</p>
+      </span>      
+    </span>
 
-   <div class="user_edit_password">
-    <%= f.label :"現在のパスワード:" %>&nbsp;
-    <%= f.password_field :current_password, autocomplete: "current-password", :id => "password_field" %><br>
-    <a>&emsp;(変更内容を保存するためには、パスワードの入力が必要です)</a>
-   </div>
+    <span class="user_edit_againpass">
+      <p><%= f.label :"新しいパスワード(確認):" %></p>&emsp;
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", :id => "password_field" %>
+    </span>
 
-   <div class="user_edit_action">
-    <button type="button" onclick="submit();" id="action_button">保存する</button>
-   </div>
-  </div>
- <% end %>
+    <span class="user_edit_password">
+      <span id="top">
+        <p><%= f.label :"現在のパスワード:" %></p>&emsp;
+        <%= f.password_field :current_password, autocomplete: "current-password", :id => "password_field" %>
+      </span>
+      <span id="bottom">
+        <p id="small">&emsp;(変更内容を保存するためには、パスワードの入力が必要です)</p>
+      </span>
+    </span>
+
+    <span class="user_edit_action">
+      <button type="button" onclick="submit();" id="action_button">保存する</button>
+    </span>
+  <% end %>
+</main>
+
+<nav class="user_edit_link">
+  <ul>
+    <li><%= link_to "マイページに戻る", :back %></li>
+  </ul>
+</nav>
 </div>

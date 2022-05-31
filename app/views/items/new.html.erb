@@ -1,41 +1,45 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/new.scss">
 
-<div class="link">
-  <%= link_to "トップページ", :controller => "items", :action => "top" %>&ensp;
-  <%= link_to "投稿一覧", items_path %>
-</div>
+<div class="new_whole">
+<main class="new_main">
+  <h3>新規投稿</h3>
 
-<div class="new">
- <h3>新規投稿</h3>
+  <div class="new_item">
+    <%= form_for @item do |f| %>
+      <span class="new_name">
+        <p><%= f.label :"商品名:" %></p>&emsp;
+        <p><%= f.text_field :name, :maxlength => "15", placeholder: " (15字以内)" %></p>
+      </span>
+      <span class="new_about">
+        <p><%= f.label :"内容:" %></p>&emsp;
+        <%= f.text_area :about %>
+      </span>
+      <span class="new_price">
+        <p><%= f.label :"値段:" %></p>&emsp;
+        <%= f.text_field :price, :size => 10 %>円
+      </span>
 
- <div class="new_items">
-  <%= form_for @item do |f| %>
-  <div class="new_name">
-    <%= f.label :"商品名:" %>&ensp;
-    <%= f.text_field :name, :maxlength => "15", placeholder: " (15字以内)" %>
-  </div><br>
-  <div class="new_about">
-    <%= f.label :"内容:" %>&ensp;
-    <%= f.text_area :about %>
-  </div><br>
-  <div class="new_price">
-    <%= f.label :"値段:" %>&ensp;
-    <%= f.text_field :price, :size => 10 %>円
-  </div><br>
+      <span class="new_image">
+        <p><%= f.label :"画像:" %></p>&emsp;
+        <label id="image_file">ファイルを選択する<%= f.file_field :image %></label>
+      </span>
 
-  <div class="new_image">
-    <%= f.label :"画像:" %>&ensp;
-    <label id="image_file">ファイルを選択する<%= f.file_field :image %></label>
-  </div><br>
-
-  <div class="new_category">
-    <%= f.label :"カテゴリー:" %>&ensp;
-    <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
-  </div><br>
+      <span class="new_category">
+        <p><%= f.label :"カテゴリー:" %></p>&emsp;
+        <%= f.select :category, [["Food", "food"], ["Life", "life"], ["Fashion", "fashion"], ["Toy", "toy"], ["Character", "character"], ["Others", "others"]], include_blank: "カテゴリーの選択" %>
+      </span>
   
-  <div class="new_action">
-    <button type="button" onclick="submit();" id="new_button">投稿する</button>
+      <span class="new_action">
+        <button type="button" onclick="submit();" id="new_button">投稿する</button>
+      </span>
+    <% end %>
   </div>
-  <% end %>
-  </div>
+</main>
+
+<nav class="new_link">
+  <ul>
+    <li><%= link_to "トップページ", :controller => "items", :action => "top" %></li>
+    <li><%= link_to "投稿一覧", items_path %></li>
+  </ul>
+</nav>
 </div>

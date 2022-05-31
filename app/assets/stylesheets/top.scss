@@ -1,77 +1,64 @@
-.top{
-    height: 580px;
-    background-color: #EFEFEF;
-
-    margin: 20px;
+.top_whole{
     padding: 40px;
 }
 
+.explain{
+    margin: 10px 0 10px 30px;
+    height: 40px;
+}
 .explain p{
     font-family: HGSGothicM;
     font-size: 20px;
     color: #626063;
-
-    margin: 40px 0px 0px 30px;
-    height: 40px;
-    display: flex;
-    align-items: center;
 }
-@media screen and (max-width:768px){
-    .explain p{width: 600px;
-        margin: 20px 0px 20px 30px;
-        font-size: 18px; }
-    }
 
-h3{
+.top_container{
+    display: flex;
+}
+
+.top_main{
+    flex-basis: 850px;
+    height: 580px;
+    background-color: #EFEFEF;
+    margin: 20px 50px 20px 20px;
+    padding: 40px;
+}
+.top_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
     display: flex;
     align-items: center;
 }
 
 .top_search{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 60px;
-}
-.top_search h3{
-    margin: 0px 30px 0px 0px;
+    margin-bottom: 50px;
 }
 
+#top_search_bar form{
+    display: flex;
+    margin-left: 50px;
+}
 input[type="text"]{
     width: 400px;
     height: 25px;
-    margin-right: 5px;
+    margin-right: 15px;
     padding: 1px 3px 1px 3px;
-
     font-family: HGSGothicG;
     font-size: 15px;
     color: black;
 }
-
 button{
     border: none;
     cursor: pointer;
 }
-@media screen and (max-width:768px){
-    #top_search_bar button{
-        background-color: rgba(0, 0, 0, 0); }
-    }
-
-.size{
+.top_icon{
     font-size: 20px;
     color: #626063;
 }
-.size:hover{
+.top_icon:hover{
     color: #7A99CF;
 }
-@media screen and (max-width:768px){
-    .size{
-        font-size: 15px; }
-    }
 
 .top_category h3{
     margin-bottom: 30px;
@@ -81,9 +68,8 @@ button{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 15px 10px 10px 30px;
+    margin: 15px 10px 10px 50px;
     height: 50px;
-
     font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicM;
@@ -93,17 +79,46 @@ button{
     font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicG;
-    
     width: 110px;
     height: 40px;
     padding: 5px 10px 5px 10px;
     background-color: white;
     cursor: pointer;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: solid 2px #7A99CF;
     border-radius: 10px;
+}
+#category_button:hover{
+    width: 120px;
+    height: 50px;
+    font-size: 23px;
+}
+
+.top_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 30px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.top_link ul{
+    align-items: flex-start;
+    list-style: none;
+    line-height: 200%;
+}
+.top_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
+}
+.top_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }

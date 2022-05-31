@@ -1,86 +1,91 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/mypage.scss">
 
-<div class="mypage_link">
-  <%= link_to "トップページ", :controller => "items", :action => "top" %>
-  <%= link_to "投稿一覧", items_path %>
-  <%= link_to 'Food一覧', {:controller => "items", :action => "food"}, method: :post %>
-  <%= link_to 'Life一覧', {:controller => "items", :action => "life"}, method: :post %>
-  <%= link_to 'Fashion一覧', {:controller => "items", :action => "fashion"}, method: :post %>
-  <%= link_to 'Toy一覧', {:controller => "items", :action => "toy"}, method: :post %>
-  <%= link_to 'Character一覧', {:controller => "items", :action => "character"}, method: :post %>
-  <%= link_to 'Others一覧', {:controller => "items", :action => "others"}, method: :post %>
-</div>
-
-<div class="mypage">
- <h3>ユーザーマイページ</h3>
- <div class="user_mypage">
-  <div class="user_info">
-   <p>名前 : <%= @user.user_name %></p>
-   <p>メールアドレス : <%= @user.email %></p>
-  </div>
-
-  <div class="user_action">
-   <div class="user_item">
-   <h3>ユーザーの投稿一覧</h3>
-    <div id="user_item_all">
-     <% @user.items.each do |t| %>
-      <li>
-        <%= t.name %>
-        <%= t.price %>円&nbsp;
-        <%= link_to '詳細', item_path(t.id) %>&nbsp;
-
-        <% if user_signed_in? && current_user.id == t.user_id %>
-          <!-- 編集 -->
-          <%= link_to edit_item_path(t.id) do %>
-            <i class="fas fa-pen user_color"></i>
-          <% end %>&nbsp;
-
-          <!-- 削除 -->
-          <%= link_to item_path(t.id), method: :delete do %>
-            <i class="far fa-trash-alt user_color"></i>
-          <% end %>
+<div class="mypage_whole">
+<main class="mypage_main">
+  <h3>ユーザーマイページ</h3>
+  <div class="user_whole">
+    <div class="mypage_frame">
+      <span id="mypage_info">
+        <p>名前 : <%= @user.user_name %></p>
+        <p>メールアドレス : <%= @user.email %></p>
+      </span>
+      <span id="mypage_user_edit">
+        <% if user_signed_in? && current_user.id == @user.id %>
+          <%= link_to "アカウントの編集", edit_user_registration_path(@user.id) %><br>
+          <%= link_to "アカウントの削除", user_path(@user.id), data: { confirm: "本当によろしいですか？" }, method: :delete %>
         <% end %>
-      </li><br>
-     <% end %>
+      </span>
     </div>
-   </div>
 
-   <div class="user_like">
-    <h3>ユーザーがいいねした投稿一覧</h3>
-    <div id="user_like_all">
-     <% @user.liked_items.each do |t| %>
-      <li>
-        <%= t.name %>
-        <%= t.price %>円&nbsp;
-        <%= link_to '詳細', item_path(t.id) %>&nbsp;
+    <div class="mypage_action">
+      <div class="mypage_item_whole">
+        <h4>ユーザーの投稿一覧</h4>
+        <ul>
+          <% @user.items.each do |t| %>
+            <li>
+              <p><%= t.name %></p>
+              <p><%= t.price %>円</p>
+              <p><%= link_to '詳細', item_path(t.id) %></p>
 
-        <div class="like">
-         <% if user_signed_in? %>
-          <!-- いいね -->
-          <% if current_user.already_liked?(t) %>
-            <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
-              <i class="fas fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
-            <% end %>
-          <% else %>
-            <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
-              <i class="far fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
-            <% end %>
+              <% if user_signed_in? && current_user.id == t.user_id %>
+                <!-- 編集 -->
+                <%= link_to edit_item_path(t.id) do %>
+                  <i class="fas fa-pen mypage_icon"></i>
+                <% end %>&nbsp;
+
+                <!-- 削除 -->
+                <%= link_to item_path(t.id), method: :delete do %>
+                  <i class="far fa-trash-alt mypage_icon"></i>
+                <% end %>
+              <% end %>
+            </li><br>
           <% end %>
-         <% else %>
-          <i class="far fa-heart user_color"></i>&thinsp;<%= t.likes.count %>
-         <% end %>
-        </div>
-      </li>
-     <% end %>
-    </div>
-   </div>
-  </div>
+        </ul>
+      </div>
 
-  <div class="mypage_user_edit">
-    <% if user_signed_in? && current_user.id == @user.id %>
-      <%= link_to "アカウントの編集", edit_user_registration_path(@user.id) %><br>
-      <%= link_to "アカウントの削除", user_path(@user.id), data: { confirm: "本当によろしいですか？" }, method: :delete %>
-    <% end %>
+      <div class="mypage_like_whole">
+        <h4>ユーザーがいいねした投稿一覧</h4>
+        <ul>
+          <% @user.liked_items.each do |t| %>
+            <li>
+              <p><%= t.name %></p>
+              <p><%= t.price %>円</p>
+              <p><%= link_to '詳細', item_path(t.id) %></p>
+
+              <span id="like">
+                <% if user_signed_in? %>
+                  <!-- いいね -->
+                  <% if current_user.already_liked?(t) %>
+                    <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
+                      <i class="fas fa-heart mypage_icon"></i>&thinsp;<%= t.likes.count %>
+                    <% end %>
+                  <% else %>
+                    <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
+                      <i class="far fa-heart mypage_icon"></i>&thinsp;<%= t.likes.count %>
+                    <% end %>
+                  <% end %>
+                <% else %>
+                  <i class="far fa-heart mypage_icon"></i>&thinsp;<%= t.likes.count %>
+                <% end %>
+              </span>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
- </div>
+</main>
+
+<nav class="mypage_link">
+  <ul>
+    <li><%= link_to "トップページ", :controller => "items", :action => "top" %></li>
+    <li><%= link_to "投稿一覧", items_path %></li>
+    <li><%= link_to 'Food一覧', {:controller => "items", :action => "food"}, method: :post %></li>
+    <li><%= link_to 'Life一覧', {:controller => "items", :action => "life"}, method: :post %></li>
+    <li><%= link_to 'Fashion一覧', {:controller => "items", :action => "fashion"}, method: :post %></li>
+    <li><%= link_to 'Toy一覧', {:controller => "items", :action => "toy"}, method: :post %></li>
+    <li><%= link_to 'Character一覧', {:controller => "items", :action => "character"}, method: :post %></li>
+    <li><%= link_to 'Others一覧', {:controller => "items", :action => "others"}, method: :post %></li>
+  </ul>
+</nav>
 </div>

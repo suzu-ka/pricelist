@@ -1,89 +1,82 @@
-.edit{
-    padding: 0px 40px 40px 40px;
+.edit_whole{
+    padding: 40px;
+    display: flex;
 }
 
-h3{
+.edit_main{
+    flex-basis: 850px;
+    margin-right: 50px;
+}
+.edit_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.edit_items{
-    padding: 100px 80px 80px 80px;
-    height: 500px;
+.edit_item{
+    height: 600px;
     background-color: #EFEFEF;
-
     font-family: HGSGothicM;
-    font-size: 25px;
+    font-size: 23px;
     color: #2C2C2C;
-
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+}
+.edit_item form{
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 550px;
+    height: 450px;
 }
 
 .edit_name{
-    margin-bottom: 30px;
     display: flex;
-    align-items: flex-start;
+    margin: 20px 0;
 }
 .edit_name input[type="text"]{
-    width: 400px;
+    width: 350px;
     height: 25px;
-
     font-family: HGSGothicM;
     font-size: 18px;
     color: black;
 }
 
 .edit_about{
-    margin: 30px 0px 30px 0px;
     display: flex;
-    align-items: flex-start;
+    margin: 20px 0;
 }
 textarea{
     width: 400px;
     height: 100px;
     padding: 5px;
-
     font-family: HGSGothicM;
     font-size: 18px;
     color: black;
 }
 
 .edit_price{
-    margin-top: 30px;
     display: flex;
-    align-items: flex-start;
+    margin: 20px 0;
 }
 .edit_price input[type="text"]{
     width: 150px;
     height: 25px;
-
     font-family: HGSGothicM;
     font-size: 18px;
     color: black;
 }
 
 .edit_image{
-    margin: 5px 0px 5px 0px;
     display: flex;
-    align-items: flex-start;
+    margin: 20px 0;
 }
 #image_file{
     width: 200px;
     height: 25px;
     background-color: white;
     cursor: pointer;
-
     font-family: HGSGothicM;
     font-size: 18px;
     color: #2C2C2C;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,12 +89,11 @@ textarea{
 }
 
 .edit_category{
-    margin: 5px 0px 5px 0px;
     display: flex;
-    align-items: flex-start;
+    margin: 20px 0;
 }
 .edit_category select{
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     font-family: HGSGothicM;
     font-size: 18px;
     color: #2C2C2C;
@@ -112,19 +104,44 @@ textarea{
 }
 
 .edit_action{
-    margin-top: 40px;
-
     display: flex;
     justify-content: center;
 }
 #edit_button{
-    padding: 5px 15px 5px 15px;
+    width: 130px;
+    margin-top: 30px;
+    padding: 5px 15px;
     background-color: white;
-
     border: solid 2px #7A99CF;
     border-radius: 10px;
-
     font-family: HGSGothicG;
-    font-size: 25px;
+    font-size: 20px;
     color: #2C2C2C;
+}
+
+.edit_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 70px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.edit_link ul{
+    align-items: flex-start;
+    list-style: none;
+    line-height: 200%;
+}
+.edit_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
+}
+.edit_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }

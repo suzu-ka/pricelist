@@ -1,182 +1,135 @@
-.mypage_link{
-    margin-right: 25px;
-
+.mypage_whole{
+    padding: 40px;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-end;
-
-    position: relative;
-    z-index: 2;
-}
-.mypage_link a{
-    margin-top: 20px;
-
-    font-family: HGSGothicE;
-    font-size: 18px;
-    color: #626063;
 }
 
-.mypage{
-    position: relative;
-    top: -250px;
-    z-index: 1;
-    padding: 0px 40px 40px 40px;
+.mypage_main{
+    flex-basis: 850px;
+    margin-right: 50px;
 }
-@media screen and (max-width:768px){
-    .mypage{
-        position: relative;
-        top: -360px;
-        padding: 0px 20px 20px 20px; }
-    }
-.mypage h3{
+.mypage_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
-.user_mypage{
-    padding: 40px;
-    height: 600px;
-    width: 950px;
+.user_whole{
+    padding: 20px;
+    height: 650px;
     background-color: #EFEFEF;
 }
-@media screen and (max-width:768px){
-    .user_mypage{
-        width: 540px;
-        padding: 20px; }
-    }
 
-.user_info{
+.mypage_frame{
     font-family: HGSGothicM;
     font-size: 20px;
     color: #2C2C2C;
     line-height: 40px;
-
     margin-bottom: 50px;
-    padding: 20px;
-    width: 800px;
-
+    padding: 20px 40px;
     border: dashed 2px #a0a0a0;
     border-radius: 20px;
-}
-@media screen and (max-width:768px){
-    .user_info{
-        width: 490px; }
-    }
-
-.user_action{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-    margin-top: 60px;
-    padding: 20px;
-}
-@media screen and (max-width:768px){
-    .user_action{
-        margin-top: 30px; }
-    }
-.user_action h3{
-    font-family: HGSGothicG;
-    font-size: 25px;
-    color: #626063;
-}
-@media screen and (max-width:768px){
-    .user_action h3{
-        font-size: 15px; }
-    }
-
-.user_item{
-    font-family: HGSGothicM;
-    font-size: 18px;
-    color: #2C2C2C;
-
-    margin-right: 20px;
-}
-@media screen and (max-width:768px){
-    .user_item{
-        font-size: 13px; }
-    }
-#user_item_all{
-    overflow: scroll;
-    width: 450px;
-    height: 200px;
-    margin-top: 30px;
-    line-height: 20px;
-}
-@media screen and (max-width:768px){
-    #user_item_all{
-        width: 230px; }
-    }
-#user_item_all li{
+#mypage_info{
     display: flex;
-}
-@media screen and (max-width:768px){
-    #user_item_all li{
-        width: 150%; }
-    }
-#user_item_all a{
-    color: inherit;
-}
-#user_item_all a:hover{
-    color: #7A99CF;
+    flex-flow: column;
 }
 
-.user_like{
-    font-family: HGSGothicM;
+#mypage_user_edit{
     font-size: 18px;
-    color: #2C2C2C;
-
-    margin-left: 20px;
-}
-@media screen and (max-width:768px){
-    .user_like{
-        font-size: 13px; }
-    }
-#user_like_all{
-    overflow: scroll;
-    width: 450px;
-    height: 200px;
-    margin-top: 30px;
     line-height: 30px;
 }
-@media screen and (max-width:768px){
-    #user_like_all{
-        width: 250px; }
-    }
-#user_like_all li{
+#mypage_user_edit a{
+    color: #2C2C2C;
+}
+#mypage_user_edit a:hover{
+    color: #7A99CF;
+}
+
+.mypage_action{
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+.mypage_action h4{
+    font-family: HGSGothicM;
+    font-size: 20px;
+    color: #626063;
+    margin-bottom: 30px;
+}
+.mypage_action ul{
+    overflow-y: scroll;
+    height: 150px;
+    line-height: 100%;
+    font-family: HGSGothicM;
+    font-size: 15px;
+    color: #2C2C2C;
+    padding-top: 5px;
+}
+.mypage_action ul li{
     display: flex;
+    padding-left: 20px;
+    border-bottom: dashed 1px #a0a0a0;
 }
-@media screen and (max-width:768px){
-    #user_like_all li{
-        width: 150%; }
-    }
-#user_like_all a{
-    color: inherit;
+.mypage_action p{
+    margin-right: 20px;
 }
-#user_like_all a:hover{
+.mypage_action a{
+    color: #2C2C2C;
+    text-decoration: none;
+}
+.mypage_action a:hover{
     color: #7A99CF;
 }
 
-.mypage_user_edit{
-    margin: 50px 0px 0px 10px;
-    line-height: 40px;
-}
-.mypage_user_edit a{
-    font-size: 18px;
-    color: inherit;
-}
-.mypage_user_edit a:hover{
-    color: #7A99CF;
+.mypage_item_whole{
+    height:200px;
+    margin-bottom: 30px;
 }
 
-.user_color{
+.mypage_like_whole{
+    height:200px;
+}
+.mypage_like_whole ul li{
+    margin-bottom: 14px;
+}
+#like a{
+    color: #7A99CF;
+    text-decoration: none;
+}
+
+.mypage_icon{
     font-size: 15px;
     color: #7A99CF;
     cursor: pointer;
+}
+
+.mypage_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 70px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.mypage_link ul{
+    align-items: flex-start;
+    list-style: none;
+    line-height: 200%;
+}
+.mypage_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
+}
+.mypage_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }

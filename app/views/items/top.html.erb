@@ -2,56 +2,62 @@
 <!-- localhost:3000/items/top -->
 <link rel="stylesheet" type="text/css" href="stylesheets/top.scss">
 
-<div class="link">
-  <% if user_signed_in? %>
-   <%= link_to "マイページ", user_path(current_user.id) %>
-  <% end %>&ensp;
-  <%= link_to '新規投稿', new_item_path %>&ensp;
-  <%= link_to '投稿一覧', items_path %>
-</div>
-
+<div class="top_whole">
 <div class="explain">
   <p>このサイトは、東京ディズニーランド・東京ディズニーシーで販売されている商品の定価が一目でわかるサイトです。</p>
 </div>
 
-<div class="top">
- <div class="top_search">
-  <h3>投稿を検索</h3>
-  <div id="top_search_bar">
-   <%= form_tag({controller:"items",action:"index"}, method: :get) do %>
-    <%= text_field_tag :search %>
-    <%= button_tag :type => "submit" do %>
-     <i class="fas fa-search size"></i>
-    <% end %>
-   <% end %>
+<div class="top_container">
+<main class="top_main">
+  <div class="top_search">
+    <h3>投稿を検索</h3>
+    <span id="top_search_bar">
+      <%= form_tag({controller:"items",action:"index"}, method: :get) do %>
+        <%= text_field_tag :search %>
+        <%= button_tag :type => "submit" do %>
+          <i class="fas fa-search top_icon"></i>
+        <% end %>
+      <% end %>
+    </span>
   </div>
- </div>
 
   <div class="top_category">
     <h3>カテゴリーから投稿を探す</h3>
-   <div class="category_name">
-    <%= button_to 'Food', {:controller => "items", :action => "food"}, {id: "category_button"} %>&ensp;
-    食品・お菓子
-   </div>
-   <div class="category_name">
-    <%= button_to 'Life', {:controller => "items", :action => "life"}, {id: "category_button"} %>&ensp;
-    生活用品・インテリア・文具
-   </div>
-   <div class="category_name">
-    <%= button_to 'Fashion', {:controller => "items", :action => "fashion"}, {id: "category_button"} %>&ensp;
-    カチューシャ・衣服・アクセサリー
-   </div>
-   <div class="category_name">
-    <%= button_to 'Toy', {:controller => "items", :action => "toy"}, {id: "category_button"} %>&ensp;
-    おもちゃ
-   </div>
-   <div class="category_name">
-    <%= button_to 'Character', {:controller => "items", :action => "character"}, {id: "category_button"} %>&ensp;
-    ぬいぐるみ・キャラクターグッズ
-   </div>
-   <div class="category_name">
-    <%= button_to 'Others', {:controller => "items", :action => "others"}, {id: "category_button"} %>&ensp;
-    その他
-   </div>
+    <span class="category_name">
+      <%= button_to 'Food', {:controller => "items", :action => "food"}, {id: "category_button"} %>&ensp;
+      食品・お菓子
+    </span>
+    <span class="category_name">
+      <%= button_to 'Life', {:controller => "items", :action => "life"}, {id: "category_button"} %>&ensp;
+      生活用品・インテリア・文具
+    </span>
+    <span class="category_name">
+      <%= button_to 'Fashion', {:controller => "items", :action => "fashion"}, {id: "category_button"} %>&ensp;
+      カチューシャ・衣服・アクセサリー
+    </span>
+    <span class="category_name">
+      <%= button_to 'Toy', {:controller => "items", :action => "toy"}, {id: "category_button"} %>&ensp;
+      おもちゃ
+    </span>
+    <span class="category_name">
+      <%= button_to 'Character', {:controller => "items", :action => "character"}, {id: "category_button"} %>&ensp;
+      ぬいぐるみ・キャラクターグッズ
+    </span>
+    <span class="category_name">
+      <%= button_to 'Others', {:controller => "items", :action => "others"}, {id: "category_button"} %>&ensp;
+      その他
+    </span>
   </div>
+</main>
+
+<nav class="top_link">
+  <ul>
+    <% if user_signed_in? %>
+      <li><%= link_to "マイページ", user_path(current_user.id) %></li>
+    <% end %>
+    <li><%= link_to '新規投稿', new_item_path %></li>
+    <li><%= link_to '投稿一覧', items_path %></li>
+  </ul>
+</nav>
+</div>
 </div>

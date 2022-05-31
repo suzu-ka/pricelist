@@ -1,57 +1,80 @@
-.signup{
-    padding: 0px 40px 40px 40px;
+.signup_whole{
+    padding: 40px;
+    display: flex;
 }
-.signup h3{
+
+.signup_main{
+    flex-basis: 850px;
+    margin-right: 50px;
+}
+.signup_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
-    display: flex;
-    align-items: center;
 }
-
-.user_new{
-    height: 550px;
+.signup_main form{
+    height: 500px;
     background-color: #EFEFEF;
     margin: 20px;
-    padding: 100px 50px 50px 50px;
-
-    font-size: 23px;
+    padding: 70px 80px;
+    font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    line-height: 80px;
 }
 
-.user_new_name{
+.signup_name{
     display: flex;
     align-items: center;
+    margin: 30px 0;
 }
 
-.user_new_email{
+.signup_email{
     display: flex;
     align-items: center;
+    margin: 30px 0;
 }
-@media screen and (max-width:768px){
-    .user_new_email{
-        display: flex;
-    flex-flow: column;
+
+.signup_password{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.signup_againpass{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.signup_action{
+    display: flex;
     justify-content: center;
+    margin-top: 60px;
+}
+
+.signup_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 70px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.signup_link ul{
     align-items: flex-start;
-
-    margin: 20px 0px 20px 0px;
-    line-height: 20px; }
-    }
-
-.user_new_password{
-    display: flex;
-    align-items: center;
+    list-style: none;
+    line-height: 200%;
 }
-
-.user_new_conpass{
-    display: flex;
-    align-items: center;
+.signup_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
 }
-
-.user_new_action{
-    margin-top: 50px;
+.signup_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }

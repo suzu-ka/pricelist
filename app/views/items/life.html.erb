@@ -1,65 +1,71 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/category.scss">
 
-<div class="link">
-  <%= link_to "トップページに戻る", :controller => "items", :action => "top" %>
-</div>
+<div class="category_whole">
+<main class="category_main">
+  <h3>Life</h3>
+  <div class="category_item">
+    <% @items.each do |t| %>
+      <% if t.category == "life" %>
+        <div class="item-container">
+          <div class="category_top">
+            <p><%= link_to item_path(t.id) do %><%= t.name %><% end %></p>
+            <p><%= t.price %>円</p>
+          </div>
+          <div class="item_bottom">
+            <div class="leftside">
+              <p><%= simple_format(t.about) %></p>
 
-<div class="category">
- <h3>Life</h3>
- <div class="category_items">
-  <% @items.each do |t| %>
-   <% if t.category == "life" %>
-    <div class="items-container">
-     <div class="category_item">
-      <p><%= t.name %></p><br>
-      <%= t.price %>円<br>
-      <%= link_to '詳細', item_path(t.id) %><br>
+              <span class="iconarea">
+                <!-- いいね -->
+                <% if user_signed_in? %>
+                  <% if current_user.already_liked?(t) %>
+                    <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
+                      <i class="fas fa-heart like"></i>&thinsp;<%= t.likes.count %>
+                    <% end %>
+                  <% else %>
+                    <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
+                      <i class="far fa-heart like"></i>&thinsp;<%= t.likes.count %>
+                    <% end %>
+                  <% end %>
+                <% else %>
+                  <i class="far fa-heart like"></i>&thinsp;<%= t.likes.count %>
+                <% end %>&emsp;
 
-      <!-- いいね -->
-      <div class="like">
-       <% if user_signed_in? %>
-        <% if current_user.already_liked?(t) %>
-          <%= link_to item_like_path(id: t.id, item_id: t.id), method: :delete do %>
-            <i class="fas fa-heart color"></i>&thinsp;<%= t.likes.count %>
-          <% end %>
-        <% else %>
-          <%= link_to item_likes_path(id: t.id, item_id: t.id), method: :post do %>
-            <i class="far fa-heart color"></i>&thinsp;<%= t.likes.count %>
-          <% end %>
-        <% end %>
-       <% else %>
-        <i class="far fa-heart color"></i>&thinsp;<%= t.likes.count %>
-       <% end %>
-      </div>
-     </div>
+                <!-- 編集 -->
+                <% if user_signed_in? && current_user.id == t.user_id %>
+                  <%= link_to edit_item_path(t.id) do %>
+                    <i class="fas fa-pen icon"></i>
+                  <% end %>
+                <% end %>&ensp;
 
-     <div class="category_image">
-      <%= image_tag t.image_url if t.image? %>
-     </div>
+                <!-- 削除 -->
+                <% if user_signed_in? && current_user.id == t.user_id %>
+                  <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
+                    <i class="far fa-trash-alt icon"></i>
+                  <% end %>
+                <% end %>
+              </span>
 
-     <div class="category_user">
-      <div id="category_icon">
-       <!-- 編集 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to edit_item_path(t.id) do %>
-          <i class="fas fa-pen color"></i>
-        <% end %>
-       <% end %>&ensp;
+              <span class="dataarea">
+                <p><a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a></p>
+                <p><%= t.created_at %></p>
+              </span>
+            </div>
 
-       <!-- 削除 -->
-       <% if user_signed_in? && current_user.id == t.user_id %>
-        <%= link_to item_path(t.id), data: { confirm: "本当によろしいですか？" }, method: :delete do %>
-          <i class="far fa-trash-alt color"></i>
-        <% end %>
-       <% end %>
-      </div><br>
+            <div class="category_image">
+              <%= image_tag t.image_url if t.image? %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</main>
 
-      <a href="/users/<%= t.user.id %>"><%= t.user.user_name %></a><br>
-      <%= t.user.email %><br>
-      <%= t.created_at %>
-     </div>
-    </div>
-   <% end %>
-  <% end %>
- </div>
+<nav class="category_link">
+  <ul>
+    <li><%= link_to "トップページに戻る", :controller => "items", :action => "top" %></li>
+    <li><p>※ブラウザバックは使用しないでください</p></li>
+  </ul>
+</nav>
 </div>

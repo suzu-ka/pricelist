@@ -1,78 +1,53 @@
-.login{
-    padding: 0px 40px 40px 40px;
+.login_whole{
+    padding: 40px;
+    display: flex;
 }
-.login h3{
+
+.login_main{
+    flex-basis: 850px;
+    margin-right: 50px;
+}
+.login_main h3{
     font-family: HGSGothicG;
     font-size: 30px;
     color: #626063;
-
-    display: flex;
-    align-items: center;
 }
 
-.login_info{
-    height: 550px;
+.login_background{
+    height: 500px;
+    margin-top: 20px;
+    padding: 70px 80px;
     background-color: #EFEFEF;
-    margin: 20px;
-    padding: 100px 50px 50px 50px;
-
-    font-size: 23px;
-    color: #2C2C2C;
-    font-family: HGSGothicM;
-    line-height: 80px;
-}
-.login_info a{
     font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    color: inherit;
+}
+.login_background a{
+    font-size: 20px;
+    color: #2C2C2C;
+    font-family: HGSGothicM;
+}
+.login_background a:hover{
+    color: #7A99CF;
 }
 
 .login_email{
     display: flex;
     align-items: center;
-}
-@media screen and (max-width:768px){
-    .login_email{
-        display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    margin: 20px 0px 20px 0px;
-    line-height: 20px; }
-    }
-#email_field{
-    width: 400px;
-    height: 25px;
-    padding: 1px 3px 1px 3px;
-
-    font-family: HGSGothicG;
-    font-size: 15px;
-    color: black;
+    margin: 30px 0;
 }
 
 .login_password{
     display: flex;
     align-items: center;
-}
-#password_field{
-    width: 200px;
-    height: 25px;
-    padding: 1px 3px 1px 3px;
-
-    font-family: HGSGothicG;
-    font-size: 15px;
-    color: black;
+    margin: 30px 0;
 }
 
-.check{
+.login_check{
     font-size: 20px;
     color: #2C2C2C;
     font-family: HGSGothicM;
-    line-height: 60px;
-
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
 }
@@ -83,5 +58,37 @@
 }
 
 .login_action{
-    margin: 50px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.login_action #action_button{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.login_link{
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+    margin-top: 70px;
+    padding: 60px 30px;
+    height: 300px;
+    border-radius: 20px;
+}
+.login_link ul{
+    align-items: flex-start;
+    list-style: none;
+    line-height: 200%;
+}
+.login_link a{
+    font-family: HGSGothicE;
+    font-size: 20px;
+    color: #626063;
+    text-decoration: none;
+}
+.login_link a:hover{
+    border-bottom: dashed 2px #a0a0a0;
 }
