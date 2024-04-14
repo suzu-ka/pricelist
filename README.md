@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<strong>GeekSalon 課題</strong><br>
+<br>
+オンラインスクールで制作したオリジナルのWebアプリケーションになります。<br>
+<br>
+東京ディズニーリゾートで販売されている(されていた)グッズの定価が調べられます。<br>
+ユーザー登録をすると、情報をまとめた投稿を作成できるようになります。<br>
+投稿へのコメントやいいね機能も実装してあります。<br>
+また、知りたい情報に簡単にたどり着けるように、カテゴリー別に投稿を分けてあります。<br>
+<br>
+(HTML, CSS, Ruby on Rails)
